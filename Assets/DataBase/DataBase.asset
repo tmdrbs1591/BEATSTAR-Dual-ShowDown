@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b58e67e5fe586b4e8b502663dedc175, type: 3}
+  m_Name: DataBase
+  m_EditorClassIdentifier: 
+  Entities:
+  - branch: 1
+    tier: S
+    gold: 100
+  - branch: 2
+    tier: A
+    gold: 80
+  - branch: 3
+    tier: B
+    gold: 60
+  - branch: 4
+    tier: C
+    gold: 40
+  - branch: 5
+    tier: D
+    gold: 20
+  - branch: 6
+    tier: E
+    gold: 10
+  - branch: 7
+    tier: all
+    gold: 0
