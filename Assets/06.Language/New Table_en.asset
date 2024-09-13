@@ -1,0 +1,223 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: New Table_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: b3e325082b8a04e419676b1caf760537, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 23527428096
+    m_Localized: Lina has been a girl who grew up in a small village in the world
+      of rhythm music since ancient times. Her village is a place shining with music,
+      where everyday life revolves around music and rhythm. Linastrit is famous for
+      her unique sense of rhythm and musical talent, and the villagers love and admire
+      her.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2970252480512
+    m_Localized: Lina activates a special mechanical device called the Sonic Amplifier,
+      enabling her to automatically attack enemies for 3 seconds.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5953396674560
+    m_Localized: LinRan grew up as a girl in a small village in China, where the
+      community deeply cherishes traditional Chinese music and culture. As a Chinese
+      girl who plays the flute, her melodic tunes harmonize with nature, captivating
+      everyone in her village. LinRan takes great pride in the richness of traditional
+      Chinese music.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6494562553856
+    m_Localized: 'Linlan creates a shield for 6 seconds with mysterious energy.
+
+      There
+      is no damage during shield activation.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6965012467712
+    m_Localized: Sean is a young man who grew up in a small town in the United States.
+      His town is a gathering place for people who cherish natural landscapes and
+      a free spirit. Sean has a passion for motorcycles, and his life and music are
+      closely intertwined with the emotions of this town.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7593700888576
+    m_Localized: Sean sprints at high speed on a motorcycle and enters Fever Time.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9612301963264
+    m_Localized: LINA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9860944498688
+    m_Localized: Guitarist
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10187496230912
+    m_Localized: LINRAN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10236196294656
+    m_Localized: Kung Fu Girl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10594662486016
+    m_Localized: SEAN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10655463116800
+    m_Localized: Rider
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56423228743680
+    m_Localized: Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56969264209920
+    m_Localized: CREDIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57290950549504
+    m_Localized: METHOD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57809345552384
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60433188888576
+    m_Localized: Music Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60478529314816
+    m_Localized: SFX Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60792875622400
+    m_Localized: Let's beat the monster by pressing 'Q' 'W' 'E' to match the rhythm!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61149064306688
+    m_Localized: Press "QW" "WE" at the same time to attack the enemy coming at the
+      same time!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61780458053632
+    m_Localized: Press "QWE" at the same time to attack the incoming enemy!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 239639861923840
+    m_Localized: KEYSET
+    m_Metadata:
+      m_Items: []
+  - m_Id: 242685736128512
+    m_Localized: RANK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 276524751654912
+    m_Localized: Top Attack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 276755681644544
+    m_Localized: Mid Attack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 276812002758656
+    m_Localized: Bottom Attack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333093575696384
+    m_Localized: INBOX
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333824890347520
+    m_Localized: NOTICE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 334401472929792
+    m_Localized: "Programing:\uC774\uC2B9\uADE0"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 334583782547456
+    m_Localized: "Graphic:\uC815\uC5EC\uD604"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 657366367866880
+    m_Localized: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 657413209853952
+    m_Localized: Retry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 657502162653184
+    m_Localized: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 774750125268992
+    m_Localized: FirstLine Attack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 774828684582912
+    m_Localized: SecondLine Attack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 774930207711232
+    m_Localized: ThirdLine Attack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 775002832084992
+    m_Localized: FourthLine Attack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 777139884498944
+    m_Localized: 3Track
+    m_Metadata:
+      m_Items: []
+  - m_Id: 777184243458048
+    m_Localized: 4Track
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3853357370417152
+    m_Localized: Adjust the sound volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3854126664491008
+    m_Localized: Lan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3854447193202688
+    m_Localized: Change the language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3854618442440704
+    m_Localized: Key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3854751011807232
+    m_Localized: Change the key setting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3855201815601152
+    m_Localized: DisP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3855219565895680
+    m_Localized: Change the display
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
