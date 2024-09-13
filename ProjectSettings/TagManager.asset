@@ -7,6 +7,9 @@ TagManager:
   - Note
   - buttonManager
   - NoteAutoBox
+  - Bullet
+  - ScoreManager
+  - NetWorkScoreGroup
   layers:
   - Default
   - TransparentFX

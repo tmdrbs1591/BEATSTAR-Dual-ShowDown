@@ -25174,7 +25174,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC790\uC720 \uD50C\uB808\uC774"
+  m_text: "1vs1 \uB300\uC804"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ce1c39dc543a96344a5f67de96b2a367, type: 2}
   m_sharedMaterial: {fileID: 2952003651432021203, guid: ce1c39dc543a96344a5f67de96b2a367, type: 2}
@@ -54044,7 +54044,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1603233212}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 578994785}
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+        m_MethodName: StageScenceLoad
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ShowDownScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1603233212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57911,7 +57923,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC790\uC720\uB86D\uAC8C \uD50C\uB808\uC774 \uD569\uB2C8\uB2E4"
+  m_text: "\uB2E4\uB978 \uD50C\uB808\uC774\uC5B4\uC640 \uB300\uC804\uD569\uB2C8\uB2E4."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b88bd5c11dca11d428bd7a0b39580ea9, type: 2}
   m_sharedMaterial: {fileID: -1680170419797540463, guid: b88bd5c11dca11d428bd7a0b39580ea9, type: 2}
