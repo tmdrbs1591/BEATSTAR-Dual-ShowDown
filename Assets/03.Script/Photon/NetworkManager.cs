@@ -27,9 +27,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks, IPunObservable
     [SerializeField] GameObject playerListItemPrefab;
     [SerializeField] Transform playerLisContent;
 
-
-    [SerializeField] Transform scoreListContent;
-    [SerializeField] GameObject scoreListPrefab;
+    [SerializeField] public Transform scoreListContent;
+    [SerializeField] public GameObject scoreListPrefab;
 
     private Dictionary<string, GameObject> playerObjects = new Dictionary<string, GameObject>(); // 플레이어 오브젝트 관리 딕셔너리
 
@@ -45,10 +44,16 @@ public class NetworkManager : MonoBehaviourPunCallbacks, IPunObservable
         PhotonNetwork.LocalPlayer.NickName = UserInfo.Data.nickname;
         Connect();
     }
+
     void Start()
     {
         // Awake 이후에 방에 들어있는 모든 플레이어의 스코어 리스트를 초기화합니다.
-       
+        SceneManager.sceneLoaded += OnSceneLoaded; // 씬 로딩 후 호출될 메서드 등록
+    }
+
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded; // 메모리 누수 방지를 위해 메서드 등록 해제
     }
 
     private void InitializePlayerScores()
@@ -64,15 +69,12 @@ public class NetworkManager : MonoBehaviourPunCallbacks, IPunObservable
             }
         }
     }
+
     void Update()
     {
-   
         if (StatusText != null)
             StatusText.text = PhotonNetwork.NetworkClientState.ToString();
-
-
     }
-
 
     #region 서버연결
     public void Connect() => PhotonNetwork.ConnectUsingSettings();
@@ -146,7 +148,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks, IPunObservable
     {
         GameObject playerHpItem = Instantiate(scoreListPrefab, scoreListContent);
         playerHpItem.GetComponent<PlayerScore>().Setup(newPlayer);
-        // 인원 수가 2명이면 씬 전환
 
         GameObject playerItem = Instantiate(playerListItemPrefab, playerLisContent);
         playerItem.GetComponent<PlayerListItem>().Setup(newPlayer);
@@ -156,11 +157,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks, IPunObservable
         {
             if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
             {
-
                 photonView.RPC("SetSongPath", RpcTarget.All, songPath[0]);
                 PhotonNetwork.LoadLevel("ShowDownStage1");
-
-
             }
         }
     }
@@ -185,5 +183,9 @@ public class NetworkManager : MonoBehaviourPunCallbacks, IPunObservable
         }
     }
 
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+            Debug.Log("ShowDownStage1 씬이 로드되었습니다.");
+    }
     #endregion
 }
