@@ -85,7 +85,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks, IPunObservable
     {
         LobbyPanel.SetActive(true);
         RoomPanel.SetActive(false);
-        WelcomeText.text = PhotonNetwork.LocalPlayer.NickName + "님 환영합니다";
+        WelcomeText.text = "=" +  PhotonNetwork.LocalPlayer.NickName + "=" ;
     }
 
     public void Disconnect() => PhotonNetwork.Disconnect();
