@@ -57,6 +57,6 @@ public class PlayerScore : MonoBehaviourPunCallbacks
 
     void Update()
     {
-        UpdateScore();  
+        UpdateScore();
     }
 }
