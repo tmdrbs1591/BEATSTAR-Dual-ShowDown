@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public class PlayerScoreManager : MonoBehaviour
+public class PlayerScoreManager : MonoBehaviourPunCallbacks
 {
     public static PlayerScoreManager instance { get; private set; }
 
@@ -34,7 +35,7 @@ public class PlayerScoreManager : MonoBehaviour
         float highestScore = float.MinValue;
         float lowestScore = float.MaxValue;
 
-        // 가장 높은 점수와 가장 낮은 점수 찾기
+        // 최고 점수와 최저 점수 찾기
         foreach (var playerScore in playerScores)
         {
             if (playerScore.currentScore > highestScore)
@@ -61,14 +62,14 @@ public class PlayerScoreManager : MonoBehaviour
             LosePanel.SetActive(false);
         }
 
-        // 최고 점수 플레이어에게 WinnerPanel 활성화
-        if (highestScorePlayer != null && WinnerPanel != null)
+        // 최고 점수 플레이어에게만 WinnerPanel 활성화 (IsMine을 통해 현재 플레이어에게만 적용)
+        if (highestScorePlayer != null && highestScorePlayer.photonView.IsMine && WinnerPanel != null)
         {
             WinnerPanel.SetActive(true);
         }
 
-        // 최저 점수 플레이어에게 LosePanel 활성화
-        if (lowestScorePlayer != null && LosePanel != null)
+        // 최저 점수 플레이어에게만 LosePanel 활성화 (IsMine을 통해 현재 플레이어에게만 적용)
+        if (lowestScorePlayer != null && lowestScorePlayer.photonView.IsMine && LosePanel != null)
         {
             LosePanel.SetActive(true);
         }
