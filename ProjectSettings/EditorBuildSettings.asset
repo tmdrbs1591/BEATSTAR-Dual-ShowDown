@@ -63,6 +63,9 @@ EditorBuildSettings:
     path: Assets/07.Scenes/Multiy/MultiStage1.unity
     guid: 3ff43a3d965af2e4fa696415f4321836
   - enabled: 1
+    path: Assets/07.Scenes/Multiy/00.Room.unity
+    guid: de5284ccbfa027a458d667f328ba6119
+  - enabled: 1
     path: Assets/07.Scenes/StageMode.unity
     guid: 5200a30b1ae4aec4584c35394c21ba0a
   m_configObjects:
