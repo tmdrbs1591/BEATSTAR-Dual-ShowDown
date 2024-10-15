@@ -158,7 +158,7 @@ public class NetworkManagers : MonoBehaviourPunCallbacks, IPunObservable
             if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
             {
                 photonView.RPC("SetSongPath", RpcTarget.All, songPath[0]);
-                PhotonNetwork.LoadLevel("ShowDownStage1");
+                PhotonNetwork.LoadLevel("MultiStage1");
             }
         }
     }

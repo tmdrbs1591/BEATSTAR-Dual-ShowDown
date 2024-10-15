@@ -43,12 +43,17 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     [Header("LobbyPanel")]
     public GameObject StartButton;
 
+    [SerializeField] Transform playerScoreLisContent;
     [SerializeField] Transform playerLisContent;
     [SerializeField] GameObject playerListItemPrefab;
+    [SerializeField] GameObject playerScoreListItemPrefab;
     private Dictionary<string, GameObject> playerObjects = new Dictionary<string, GameObject>(); // 플레이어 오브젝트 관리 딕셔너리
 
     string roomCode; // 방 코드를 저장할 변수
 
+    [Header("SongPath")]
+    public string[] songPath;
+    private string currentSongPath;
     void Awake()
     {
         Screen.SetResolution(960, 540, false);
@@ -78,10 +83,20 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         if (PhotonNetwork.IsMasterClient)
         {
-            PhotonNetwork.LoadLevel("01.StartWaitRoom");
+            if (songPath != null)
+            {
+                    photonView.RPC("SetSongPath", RpcTarget.All, songPath[0]);
+                    PhotonNetwork.LoadLevel("ShowDownStage1");
+            }
         }
     }
 
+    [PunRPC]
+    void SetSongPath(string path)
+    {
+        currentSongPath = path;
+        DataManager.instance.songPath = path;
+    }
     #region 방리스트 갱신
     public void MyListClick(int num)
     {
@@ -197,9 +212,16 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
         for (int i = 0; i < players.Count(); i++)
         {
-           //p GameObject playerItem = Instantiate(playerListItemPrefab, playerLisContent);
-         //   playerItem.GetComponent<ScoreListItem>().Setup(players[i]);
-         //   playerObjects[players[i].NickName] = playerItem; // 플레이어 오브젝트 저장
+            GameObject playerItem = Instantiate(playerListItemPrefab, playerLisContent);
+            playerItem.GetComponent<PlayerListItem>().Setup(players[i]);
+            playerObjects[players[i].NickName] = playerItem; // 플레이어 오브젝트 저장
+        }
+
+        for (int i = 0; i < players.Count(); i++)
+        {
+            GameObject playerScoreItem = Instantiate(playerScoreListItemPrefab, playerScoreLisContent);
+            playerScoreItem.GetComponent<ScoreListItem>().Setup(players[i]);
+           playerObjects[players[i].NickName] = playerScoreItem; // 플레이어 오브젝트 저장
         }
 
 
@@ -238,9 +260,15 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         RoomRenewal();
         ChatRPC("<color=yellow>" + newPlayer.NickName + "님이 참가하셨습니다</color>");
 
-       // GameObject playerItem = Instantiate(playerListItemPrefab, playerLisContent);
-      //  playerItem.GetComponent<ScoreListItem>().Setup(newPlayer);
-       // playerObjects[newPlayer.NickName] = playerItem; // 플레이어 오브젝트 저장
+        GameObject playerItem = Instantiate(playerListItemPrefab, playerLisContent);
+        playerItem.GetComponent<PlayerListItem>().Setup(newPlayer);
+        playerObjects[newPlayer.NickName] = playerItem; // 플레이어 오브젝트 저장
+
+        GameObject playerScoreListItem = Instantiate(playerScoreListItemPrefab, playerScoreLisContent);
+        playerScoreListItem.GetComponent<ScoreListItem>().Setup(newPlayer);
+        playerObjects[newPlayer.NickName] = playerItem; // 플레이어 오브젝트 저장
+
+
 
     }
 
