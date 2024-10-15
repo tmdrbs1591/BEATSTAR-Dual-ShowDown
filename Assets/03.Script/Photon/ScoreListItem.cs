@@ -19,18 +19,16 @@ public class ScoreListItem : MonoBehaviourPunCallbacks
     {
         player = _player;
         nickNameText.text = _player.NickName;
-        UpdateHPBar(); // 초기 HP 및 레벨 업데이트
+        UpdateScore(); // 초기 HP 및 레벨 업데이트
     }
 
     // HP 바와 레벨을 업데이트하는 메서드
-    void UpdateHPBar()
+    void UpdateScore()
     {
-        PlayerScore playerStats = GetPlayerStatsByNickName(nickNameText.text);
-        if (playerStats != null)
+        PlayerScore playerScore = GetPlayerStatsByNickName(nickNameText.text);
+        if (playerScore != null)
         {
-
-            // 레벨 텍스트 설정
-          //  scoreText.text = playerStats.currentScore.ToString();
+            scoreText.text = playerScore.currentScore.ToString();
         }
     }
 
@@ -63,6 +61,6 @@ public class ScoreListItem : MonoBehaviourPunCallbacks
 
     void Update()
     {
-        UpdateHPBar();  // 매 프레임 HP와 레벨을 업데이트 (최신 상태 반영)
+        UpdateScore();  // 매 프레임 HP와 레벨을 업데이트 (최신 상태 반영)
     }
 }

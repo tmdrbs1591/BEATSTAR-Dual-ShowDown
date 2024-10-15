@@ -207,7 +207,18 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
+        // 기존에 생성된 리스트 아이템들을 모두 삭제
+        foreach (Transform child in playerLisContent)
+        {
+            Destroy(child.gameObject);
+        }
 
+        foreach (Transform child in playerScoreLisContent)
+        {
+            Destroy(child.gameObject);
+        }
+
+        // 플레이어 리스트를 새로 생성
         Player[] players = PhotonNetwork.PlayerList;
 
         for (int i = 0; i < players.Count(); i++)
@@ -221,9 +232,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         {
             GameObject playerScoreItem = Instantiate(playerScoreListItemPrefab, playerScoreLisContent);
             playerScoreItem.GetComponent<ScoreListItem>().Setup(players[i]);
-           playerObjects[players[i].NickName] = playerScoreItem; // 플레이어 오브젝트 저장
+            playerObjects[players[i].NickName] = playerScoreItem; // 플레이어 오브젝트 저장
         }
-
 
         RoomPanel.SetActive(true);
         RoomRenewal();
@@ -232,16 +242,14 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
         StartButton.SetActive(PhotonNetwork.IsMasterClient);
 
-        // 방 코드 표시: 방 코드만 추출하여 UI에 표시
+        // 방 코드 표시
         string roomName = PhotonNetwork.CurrentRoom.Name;
         string roomCode = roomName.Split('_')[^1];  // 방 이름에서 마지막 부분이 방 코드
         RoomCodeText.text = "Room Code: " + roomCode;
 
         LobbyPanel.SetActive(false);
         DisconnectPanel.SetActive(false);
-      //  PhotonNetwork.Instantiate("Player", new Vector3(0, 10, 0), Quaternion.identity);
     }
-
 
     public override void OnCreateRoomFailed(short returnCode, string message)
     {

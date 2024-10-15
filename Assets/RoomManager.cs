@@ -68,7 +68,6 @@ public class RoomManager : MonoBehaviourPunCallbacks
             for (int i = 0; i < players.Length; i++)
             {
                 GameObject playerScoreItem = Instantiate(scoreListPrefab, scoreListContent);
-                playerScoreItem.GetComponent<PlayerScore>().Setup(players[i]);
             }
         }
     }
