@@ -35,7 +35,7 @@ public class ScoreListItem : MonoBehaviourPunCallbacks
     // 닉네임으로 PlayerStats를 찾는 메서드
     PlayerScore GetPlayerStatsByNickName(string nickName)
     {
-        foreach (GameObject playerObject in GameObject.FindGameObjectsWithTag("Player"))
+        foreach (GameObject playerObject in GameObject.FindGameObjectsWithTag("PlayerScore"))
         {
             PhotonView photonView = playerObject.GetComponent<PhotonView>();
             if (photonView != null && photonView.Owner.NickName == nickName)

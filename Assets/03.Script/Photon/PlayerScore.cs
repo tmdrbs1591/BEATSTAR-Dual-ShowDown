@@ -9,12 +9,10 @@ public class PlayerScore : MonoBehaviourPunCallbacks
     public float currentScore;
 
     [SerializeField] TMP_Text scoreText;
-    [SerializeField] public GameObject crown;
-
-    [SerializeField] public bool isDeath;
 
     private void Start()
     {
+        PlayerScoreManager.instance.playerScores.Add(this);
     }
 
     // Update is called once per frame
@@ -25,6 +23,7 @@ public class PlayerScore : MonoBehaviourPunCallbacks
         // 점수 추가
         if (Input.GetKeyDown(KeyCode.H) && photonView.IsMine)
         {
+            Debug.Log("점수 추가");
             AddScore(1000);
         }
     }
@@ -42,11 +41,4 @@ public class PlayerScore : MonoBehaviourPunCallbacks
         photonView.RPC("AddScoreRPC", RpcTarget.All, score);
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Ocean"))
-        {
-            isDeath = true;
-        }
-    }
 }

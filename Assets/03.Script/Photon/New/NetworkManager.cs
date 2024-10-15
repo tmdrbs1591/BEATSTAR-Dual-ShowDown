@@ -86,7 +86,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             if (songPath != null)
             {
                     photonView.RPC("SetSongPath", RpcTarget.All, songPath[0]);
-                    PhotonNetwork.LoadLevel("ShowDownStage1");
+                    PhotonNetwork.LoadLevel("MultiStage1");
             }
         }
     }

@@ -119,6 +119,7 @@ public class ReFirstStage : MonoBehaviour
     {
         yield return new WaitForSeconds(time);// 설정된 시간만큼 대기 후 클리어 패널 활성화
         ClearPanel.SetActive(true);
+        PlayerScoreManager.instance.WinnerLoserPanel();
     }
     public IEnumerator EffectTrue(float time, GameObject Effect)   // 특정 시간 후 이펙트 활성화
     {

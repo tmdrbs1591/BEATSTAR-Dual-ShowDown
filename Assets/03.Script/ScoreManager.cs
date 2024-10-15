@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public class ScoreManager : MonoBehaviour
+public class ScoreManager : MonoBehaviourPunCallbacks
 {
     [SerializeField] TMPro.TMP_Text txtScore = null;// 점수 텍스트 UI
 
@@ -23,10 +24,14 @@ public class ScoreManager : MonoBehaviour
         myAnim = GetComponent<Animator>();// 애니메이터 컴포넌트 가져오기
         currentScore = 0;// 현재 점수 초기화
         txtScore.text = "0";// 현재 점수 초기화
+
+    }
+    private void Update()
+    {
+     
     }
 
-  
-   public void IncreaseScore(int p_JudgementState)
+    public void IncreaseScore(int p_JudgementState)
     {//콤보증가
         thecomboManager.IncreaseCombo();// 콤보 증가
 
@@ -45,5 +50,16 @@ public class ScoreManager : MonoBehaviour
         //애니메이션
         myAnim.SetTrigger(animationScoreUp);
 
+        GameObject playerScore = GameObject.FindGameObjectWithTag("PlayerScore");
+        if (playerScore != null)
+        {
+            var playerScoreScript = playerScore.GetComponent<PlayerScore>();
+            playerScoreScript.AddScore(t_increateScore);
+        }
+    void RPCScore()
+    {
+   
+        }
     }
+    
 }
