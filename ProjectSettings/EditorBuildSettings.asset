@@ -6,61 +6,61 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/06.Scenes/TeamLogo.unity
+    path: Assets/07.Scenes/TeamLogo.unity
     guid: f383b9648fb71724f9983b79ff9efd6e
   - enabled: 1
-    path: Assets/06.Scenes/Logo.unity
+    path: Assets/07.Scenes/Logo.unity
     guid: 4c6a5a6733be25b499e939f5cd684021
   - enabled: 1
-    path: Assets/06.Scenes/Stage1.unity
+    path: Assets/07.Scenes/Stage1.unity
     guid: c65a14b27e9cc10449cbc9d6d2d87ebd
   - enabled: 1
-    path: Assets/06.Scenes/Stage2.unity
+    path: Assets/07.Scenes/Stage2.unity
     guid: 67acac1fd5ee06f44994d09b4e39f9e4
   - enabled: 1
-    path: Assets/06.Scenes/Stage3.unity
+    path: Assets/07.Scenes/Stage3.unity
     guid: ee594d6b38991d54089196cc1dfa109d
   - enabled: 1
-    path: Assets/06.Scenes/ShowDownStage1.unity
+    path: Assets/07.Scenes/ShowDownStage1.unity
     guid: 41e094669678f7844918474364c63d74
   - enabled: 1
-    path: Assets/06.Scenes/Stage5.unity
+    path: Assets/07.Scenes/Stage5.unity
     guid: 9298720aed7cf5449912cc5f793c233c
   - enabled: 1
-    path: Assets/06.Scenes/StagdeModeStage1.unity
+    path: Assets/07.Scenes/StagdeModeStage1.unity
     guid: f7972dbb05d69cc42a7dc0b67933d05f
   - enabled: 1
-    path: Assets/06.Scenes/StagdeModeStage2.unity
+    path: Assets/07.Scenes/StagdeModeStage2.unity
     guid: 60f4a6b8484224e4f93f44814e3c695e
   - enabled: 1
-    path: Assets/06.Scenes/StagdeModeStage3.unity
+    path: Assets/07.Scenes/StagdeModeStage3.unity
     guid: 4bd033a3537252f4ba452cd9d7d4f558
   - enabled: 1
-    path: Assets/06.Scenes/TTitle.unity
+    path: Assets/07.Scenes/TTitle.unity
     guid: 601ab60e403adb940a779a42b20a54ca
   - enabled: 1
-    path: Assets/06.Scenes/Title.unity
+    path: Assets/07.Scenes/Title.unity
     guid: 7e948c67ba53d6d4ea202c6bae59c3ab
   - enabled: 1
-    path: Assets/06.Scenes/ShowDownScene.unity
+    path: Assets/07.Scenes/ShowDownScene.unity
     guid: aaa3dfe2044de64459cd0cc068590f8b
   - enabled: 1
-    path: Assets/06.Scenes/Login.unity
+    path: Assets/07.Scenes/Login.unity
     guid: c5ebe0a2578bdb94fb51957731ef16fa
   - enabled: 1
-    path: Assets/06.Scenes/LoadingScene.unity
+    path: Assets/07.Scenes/LoadingScene.unity
     guid: 4a61e6025dd6dc246890fdbc4817c008
   - enabled: 1
-    path: Assets/06.Scenes/Warning.unity
+    path: Assets/07.Scenes/Warning.unity
     guid: 45ad056c92f6bf94180d4b00b8401f7c
   - enabled: 1
-    path: Assets/06.Scenes/Menu.unity
+    path: Assets/07.Scenes/Menu.unity
     guid: 52a0f36e16c0ff543be46180c515cefa
   - enabled: 1
-    path: Assets/06.Scenes/Tutorial.unity
+    path: Assets/07.Scenes/Tutorial.unity
     guid: da63d6fc492c6434ab1dc6c96fa71dd7
   - enabled: 1
-    path: Assets/06.Scenes/StageMode.unity
+    path: Assets/07.Scenes/StageMode.unity
     guid: 5200a30b1ae4aec4584c35394c21ba0a
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: f964c1ab316bc4c49b119d629d76c994, type: 2}
