@@ -12,14 +12,15 @@ public class ScoreListItem : MonoBehaviourPunCallbacks
     [SerializeField] TMP_Text scoreText;   // 레벨을 표시할 텍스트
     Player player;
 
-    private void Awake()
+    private void Start()
     {
-    }
+    }   
     public void Setup(Player _player)
     {
         player = _player;
         nickNameText.text = _player.NickName;
         UpdateScore(); // 초기 HP 및 레벨 업데이트
+
     }
 
     // HP 바와 레벨을 업데이트하는 메서드

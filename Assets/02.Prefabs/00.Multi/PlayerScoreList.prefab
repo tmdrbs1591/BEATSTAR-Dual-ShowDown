@@ -213,6 +213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nickNameText: {fileID: 1934685342935354282}
   scoreText: {fileID: 8844770450085865054}
+  PV: {fileID: 7414570002032020040}
 --- !u!1 &2447083052892683792
 GameObject:
   m_ObjectHideFlags: 0
