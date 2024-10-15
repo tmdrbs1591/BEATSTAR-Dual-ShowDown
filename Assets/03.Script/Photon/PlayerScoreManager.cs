@@ -8,6 +8,7 @@ public class PlayerScoreManager : MonoBehaviourPunCallbacks
     public static PlayerScoreManager instance { get; private set; }
 
     public List<PlayerScore> playerScores = new List<PlayerScore>();
+    public List<PlayerListItem> playerScoreLists = new List<PlayerListItem>();
 
     public GameObject WinnerPanel;
     public GameObject LosePanel;

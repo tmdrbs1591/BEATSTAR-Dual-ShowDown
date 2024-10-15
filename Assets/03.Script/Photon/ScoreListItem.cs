@@ -12,9 +12,15 @@ public class ScoreListItem : MonoBehaviourPunCallbacks
     [SerializeField] TMP_Text scoreText;   // 레벨을 표시할 텍스트
     Player player;
 
+    [SerializeField] GameObject firstImage;        // 1등 이미지
+    [SerializeField] GameObject secondImage;       // 2등 이미지
+    [SerializeField] GameObject thirdImage;        // 3등 이미지
+    [SerializeField] GameObject fourthImage;       // 4등 이미지
+
     private void Start()
     {
-    }   
+        PlayerScoreManager.instance.playerScoreLists.Add(this);
+    }
     public void Setup(Player _player)
     {
         player = _player;
