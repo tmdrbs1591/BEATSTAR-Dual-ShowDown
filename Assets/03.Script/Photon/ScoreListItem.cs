@@ -9,14 +9,13 @@ using UnityEngine.UI;  // 슬라이더를 사용하기 위한 네임스페이스
 public class ScoreListItem : MonoBehaviourPunCallbacks
 {
     [SerializeField] TMP_Text nickNameText;        // 플레이어 이름을 표시할 텍스트
-    [SerializeField] TMP_Text scoreText;   // 레벨을 표시할 텍스트
+    [SerializeField] public TMP_Text scoreText;   // 레벨을 표시할 텍스트
     Player player;
 
-    [SerializeField] GameObject firstImage;        // 1등 이미지
-    [SerializeField] GameObject secondImage;       // 2등 이미지
-    [SerializeField] GameObject thirdImage;        // 3등 이미지
-    [SerializeField] GameObject fourthImage;       // 4등 이미지
-
+    [SerializeField] public GameObject firstImage;        // 1등 이미지
+    [SerializeField] public GameObject secondImage;       // 2등 이미지
+    [SerializeField] public GameObject thirdImage;        // 3등 이미지
+    [SerializeField] public GameObject fourthImage;       // 4등 이미지
     private void Start()
     {
         PlayerScoreManager.instance.playerScoreLists.Add(this);

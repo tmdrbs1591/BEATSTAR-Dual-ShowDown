@@ -8,7 +8,7 @@ public class PlayerScore : MonoBehaviourPunCallbacks
 {
     public float currentScore;
 
-    [SerializeField] TMP_Text scoreText;
+    [SerializeField]  TMP_Text scoreText;
 
     private void Start()
     {

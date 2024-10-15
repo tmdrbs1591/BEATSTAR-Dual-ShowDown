@@ -8,7 +8,7 @@ public class PlayerScoreManager : MonoBehaviourPunCallbacks
     public static PlayerScoreManager instance { get; private set; }
 
     public List<PlayerScore> playerScores = new List<PlayerScore>();
-    public List<PlayerListItem> playerScoreLists = new List<PlayerListItem>();
+    public List<ScoreListItem> playerScoreLists = new List<ScoreListItem>();
 
     public GameObject WinnerPanel;
     public GameObject LosePanel;
@@ -26,7 +26,10 @@ public class PlayerScoreManager : MonoBehaviourPunCallbacks
             Destroy(gameObject);  // 이미 인스턴스가 있으면 자신을 파괴
         }
     }
-
+    private void Update()
+    {
+        DisplayScoreRankings();
+    }
     // 매 프레임마다 점수 비교하여 최고 점수 플레이어에게 왕관을 활성화
     public void WinnerLoserPanel()
     {
@@ -73,6 +76,53 @@ public class PlayerScoreManager : MonoBehaviourPunCallbacks
         if (lowestScorePlayer != null && lowestScorePlayer.photonView.IsMine && LosePanel != null)
         {
             LosePanel.SetActive(true);
+        }
+    }
+    public void DisplayScoreRankings()
+    {
+        // ScoreListItem 리스트를 scoreText의 숫자 값을 기준으로 내림차순 정렬
+        playerScoreLists.Sort((item1, item2) =>
+        {
+            // string을 int로 변환하여 비교
+            int score1 = 0, score2 = 0;
+            if (int.TryParse(item1.scoreText.text, out score1) && int.TryParse(item2.scoreText.text, out score2))
+            {
+                return score2.CompareTo(score1);  // 내림차순 정렬
+            }
+            return 0;  // 변환 실패 시 순서 변경 없음
+        });
+
+        // 정렬된 리스트를 기반으로 순위 및 이미지 설정
+        for (int i = 0; i < playerScoreLists.Count; i++)
+        {
+            // 순위 출력
+            Debug.Log($"Rank {i + 1}: {playerScoreLists[i].scoreText.text} - Score: {playerScoreLists[i].scoreText.text}");
+
+            // 1등, 2등, 3등에 맞는 이미지 활성화
+            if (i == 0)  // 1등
+            {
+                playerScoreLists[i].firstImage.SetActive(true);
+                playerScoreLists[i].secondImage.SetActive(false);
+                playerScoreLists[i].thirdImage.SetActive(false);
+            }
+            else if (i == 1)  // 2등
+            {
+                playerScoreLists[i].firstImage.SetActive(false);
+                playerScoreLists[i].secondImage.SetActive(true);
+                playerScoreLists[i].thirdImage.SetActive(false);
+            }
+            else if (i == 2)  // 3등
+            {
+                playerScoreLists[i].firstImage.SetActive(false);
+                playerScoreLists[i].secondImage.SetActive(false);
+                playerScoreLists[i].thirdImage.SetActive(true);
+            }
+            else  // 4등 이상은 이미지 비활성화
+            {
+                playerScoreLists[i].firstImage.SetActive(false);
+                playerScoreLists[i].secondImage.SetActive(false);
+                playerScoreLists[i].thirdImage.SetActive(false);
+            }
         }
     }
 
