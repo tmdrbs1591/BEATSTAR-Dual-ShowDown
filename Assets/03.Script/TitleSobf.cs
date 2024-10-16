@@ -46,4 +46,15 @@ public class TitleSobf : MonoBehaviour
         audio.clip = titleSong; // 새로운 클립 설정
         audio.Play(); // 클립 재생
     }
+
+    public void CharSelectSongPlay()
+    {
+        if (audio.isPlaying)
+        {
+            audio.Stop(); // 현재 재생 중인 곡을 정지합니다.
+        }
+
+        audio.clip = charSelectSong; // 새로운 클립 설정
+        audio.Play(); // 클립 재생
+    }
 }
