@@ -64,7 +64,7 @@ public class MenuBtn : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
             else if (Type == "ModeButton")
                 AudioManager.instance.PlaySound(transform.position, 3, Random.Range(1.2f, 1.2f), 1);
             else
-                AudioManager.instance.PlaySound(transform.position, 12, Random.Range(1f, 1f), 1);
+                AudioManager.instance.PlaySound(transform.position, 3, Random.Range(1f, 1f), 1);
             // 마우스가 버튼 위에 있을 때 아웃라인 메테리얼로 교체합니다.
             buttonImage.material = outlineMaterial;
 
@@ -97,7 +97,7 @@ public class MenuBtn : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
           else if (Type == "ModeButton")
             AudioManager.instance.PlaySound(transform.position, 3, Random.Range(1.2f, 1.2f), 1);
         else
-             AudioManager.instance.PlaySound(transform.position, 12, Random.Range(1f, 1f), 1);
+             AudioManager.instance.PlaySound(transform.position, 3, Random.Range(1f, 1f), 1);
 
     }
 

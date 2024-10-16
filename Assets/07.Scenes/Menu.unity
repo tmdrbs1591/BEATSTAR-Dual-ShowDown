@@ -2370,6 +2370,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 797927876}
+        m_TargetAssemblyTypeName: TitleSobf, Assembly-CSharp
+        m_MethodName: SettingSongPlay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &112164503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12194,6 +12206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 567791357}
   - component: {fileID: 567791356}
+  - component: {fileID: 567791358}
   m_Layer: 5
   m_Name: SettingPanel
   m_TagString: Untagged
@@ -12237,6 +12250,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -1}
   m_SizeDelta: {x: 16.52002, y: -2}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &567791358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567791354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20ee1bed5c791f947a44a9f064bb5840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!21 &573045980
 Material:
   serializedVersion: 8
@@ -17708,8 +17733,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2398c7b2e70ce8b478addf2fa7610c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  songs: {fileID: 8300000, guid: 5519f4e298af14f4e83d087afdc67fe0, type: 3}
   audio: {fileID: 797927875}
+  settingSong: {fileID: 8300000, guid: cc1dd70ddfb47dc4487ab3796a6cc641, type: 3}
+  charSelectSong: {fileID: 0}
+  titleSong: {fileID: 8300000, guid: f41c9d2e056ad394b9a21c37011c89a3, type: 3}
 --- !u!1 &799224817
 GameObject:
   m_ObjectHideFlags: 0
