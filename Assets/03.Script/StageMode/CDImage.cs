@@ -87,6 +87,31 @@ public class CDImage : MonoBehaviour
             case StageModeStageManager.Stage.ThirdTheEighthStage:
                 cDimage.sprite = cdSprites[7];
                 break;
+
+            case StageModeStageManager.Stage.FifthTheFirstStage:
+                cDimage.sprite = cdSprites[0];
+                break;
+            case StageModeStageManager.Stage.FifthTheSecondStage:
+                cDimage.sprite = cdSprites[1];
+                break;
+            case StageModeStageManager.Stage.FifthTheThirdStage:
+                cDimage.sprite = cdSprites[2];
+                break;
+            case StageModeStageManager.Stage.FifthTheFourthStage:
+                cDimage.sprite = cdSprites[3];
+                break;
+            case StageModeStageManager.Stage.FifthTheFifthStage:
+                cDimage.sprite = cdSprites[4];
+                break;
+            case StageModeStageManager.Stage.FifthTheFSixthtage:
+                cDimage.sprite = cdSprites[5];
+                break;
+            case StageModeStageManager.Stage.FifthTheSeventhStage:
+                cDimage.sprite = cdSprites[6];
+                break;
+            case StageModeStageManager.Stage.FifthTheEighthStage:
+                cDimage.sprite = cdSprites[7];
+                break;
             default:
                 // 기본값 처리 (필요에 따라 추가)
                 break;

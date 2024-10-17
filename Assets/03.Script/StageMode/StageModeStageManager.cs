@@ -35,6 +35,15 @@ public class StageModeStageManager : MonoBehaviour
         ThirdTheSeventhStage,
         ThirdTheEighthStage,
 
+        FifthTheFirstStage,
+        FifthTheSecondStage,
+        FifthTheThirdStage,
+        FifthTheFourthStage,
+        FifthTheFifthStage,
+        FifthTheFSixthtage,
+        FifthTheSeventhStage,
+        FifthTheEighthStage,
+
     }
 
     public string[] songPath;
@@ -57,6 +66,7 @@ public class StageModeStageManager : MonoBehaviour
 
     void Awake()
     {
+        Debug.Log("Songs array length: " + songPath.Length); // 배열 길이 확인
         //DontDestroyOnLoad(gameObject);
         if (instance == null)
         {
@@ -72,7 +82,6 @@ public class StageModeStageManager : MonoBehaviour
 
     void Update()
     {
-        // 이거를 지우고 하나의 로딩씬으로 가게 바꾸고 이걸 다른거에 옮겨 코루틴이랑 같이
         if (Input.GetKeyDown(KeyCode.Return))
         {
             StartGame();
@@ -84,6 +93,7 @@ public class StageModeStageManager : MonoBehaviour
         if (!isStart)
         {
             DataManager.instance.songPath = songPath[(int)currentStage];
+
             if (currentStage == Stage.FirstTheFirstStage)
             {
                 AudioManager.instance.PlaySound(transform.position, 2, Random.Range(1.0f, 1.0f), 1);
@@ -116,9 +126,7 @@ public class StageModeStageManager : MonoBehaviour
             }
             else if (currentStage == Stage.FirstTheEighthStage)
             {
-                GravityPanel.SetActive(true);  
-                Fadein.SetActive(true);
-                StartCoroutine(SceneLate("Stage5"));
+         
             }
             else if (currentStage == Stage.SecondTheFirstStage)
             {
@@ -176,9 +184,35 @@ public class StageModeStageManager : MonoBehaviour
             else if (currentStage == Stage.ThirdTheEighthStage)
             {
             }
+            else if (currentStage == Stage.FifthTheFirstStage)
+            {
+                Fadein.SetActive(true);
+                StartCoroutine(SceneLate("StageModeStage5"));
+            }
+            else if (currentStage == Stage.FifthTheSecondStage)
+            {
+            }
+            else if (currentStage == Stage.FifthTheThirdStage)
+            {
+            }
+            else if (currentStage == Stage.FifthTheFourthStage)
+            {
+            }
+            else if (currentStage == Stage.FifthTheFifthStage)
+            {
+            }
+            else if (currentStage == Stage.FifthTheFSixthtage)
+            {
+            }
+            else if (currentStage == Stage.FifthTheSeventhStage)
+            {
+            }
+            else if (currentStage == Stage.FifthTheEighthStage)
+            {
+            }
             else
             {
-                GravityPanel.SetActive(false);
+               // GravityPanel.SetActive(false);
                 //AudioManager.instance.PlaySound(transform.position, 5, Random.Range(1.0f, 1.0f), 1);
                 // FixedPanel();
             }

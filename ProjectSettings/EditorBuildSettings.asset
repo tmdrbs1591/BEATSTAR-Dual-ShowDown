@@ -57,6 +57,9 @@ EditorBuildSettings:
     path: Assets/07.Scenes/Menu.unity
     guid: 52a0f36e16c0ff543be46180c515cefa
   - enabled: 1
+    path: Assets/07.Scenes/StageModeStage5.unity
+    guid: 9fc7878531799594fb378e2d20c0beb5
+  - enabled: 1
     path: Assets/07.Scenes/Tutorial.unity
     guid: da63d6fc492c6434ab1dc6c96fa71dd7
   - enabled: 1
