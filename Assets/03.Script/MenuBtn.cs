@@ -33,9 +33,12 @@ public class MenuBtn : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
 
     private void OnEnable()
     {
-        // 위치를 초기화하고 애니메이션을 시작
-        transform.position = originalPosition;
-        StartCoroutine(AnimateButton());
+        if (Type != "None")
+        {
+            // 위치를 초기화하고 애니메이션을 시작
+            transform.position = originalPosition;
+            StartCoroutine(AnimateButton());
+        }
     }
 
     void Start()
@@ -51,8 +54,11 @@ public class MenuBtn : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
         Vector3 startPos = originalPosition + new Vector3(0, 10, 0); // 10은 임의의 값입니다.
         transform.position = startPos;
         yield return new WaitForSeconds(startDelay);
-        // 버튼을 아래로 내린 후 살짝 튀어오르게 하는 애니메이션
-        transform.DOMoveY(originalPosition.y, 1f).SetEase(Ease.OutBounce);
+        if (Type != "None")
+        {
+            // 버튼을 아래로 내린 후 살짝 튀어오르게 하는 애니메이션
+            transform.DOMoveY(originalPosition.y, 1f).SetEase(Ease.OutBounce);
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -93,11 +99,11 @@ public class MenuBtn : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
         transform.DOScale(navScaleUp, scaleDuration).SetEase(Ease.OutSine);
         buttonImage.material = outlineMaterial;
         if (Type == "MenuButton")
-             AudioManager.instance.PlaySound(transform.position, 3, Random.Range(1.2f, 1.2f), 1);
-          else if (Type == "ModeButton")
+            AudioManager.instance.PlaySound(transform.position, 3, Random.Range(1.2f, 1.2f), 1);
+        else if (Type == "ModeButton")
             AudioManager.instance.PlaySound(transform.position, 3, Random.Range(1.2f, 1.2f), 1);
         else
-             AudioManager.instance.PlaySound(transform.position, 3, Random.Range(1f, 1f), 1);
+            AudioManager.instance.PlaySound(transform.position, 3, Random.Range(1f, 1f), 1);
 
     }
 
@@ -116,27 +122,30 @@ public class MenuBtn : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
     }
     public void NavLock()
     {
-        if (buttonManager.isNavimpossible && Type == "MenuButton" ||  buttonManager.isCharPanel && Type == "MenuButton" || buttonManager.isTitleSettingPanel && Type == "MenuButton")
-        {
-            var navigation = new Navigation();
-            navigation.mode = Navigation.Mode.None;
 
-            menuBtn.navigation = navigation;
-        }
-        else if (Type == "SettingButton")
+        if (Type != "None")
         {
-            var navigation = new Navigation();
-            navigation.mode = Navigation.Mode.Vertical;
+            if (buttonManager.isNavimpossible && Type == "MenuButton" || buttonManager.isCharPanel && Type == "MenuButton" || buttonManager.isTitleSettingPanel && Type == "MenuButton")
+            {
+                var navigation = new Navigation();
+                navigation.mode = Navigation.Mode.None;
 
-            menuBtn.navigation = navigation;
-        }
-        else
-        {
-            var navigation = new Navigation();
-            navigation.mode = Navigation.Mode.Horizontal;
+                menuBtn.navigation = navigation;
+            }
+            else if (Type == "SettingButton")
+            {
+                var navigation = new Navigation();
+                navigation.mode = Navigation.Mode.Vertical;
 
-            menuBtn.navigation = navigation;
+                menuBtn.navigation = navigation;
+            }
+            else
+            {
+                var navigation = new Navigation();
+                navigation.mode = Navigation.Mode.Horizontal;
+
+                menuBtn.navigation = navigation;
+            }
         }
     }
-   
 }

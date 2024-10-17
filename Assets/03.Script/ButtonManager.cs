@@ -322,4 +322,10 @@ public class ButtonManager : MonoBehaviour
         Time.timeScale = 1;
         LoadingManager.LoadScene(SceneName);
     }
+
+    public void PlaySoune(int index)
+    {
+        AudioManager.instance.PlaySound(transform.position, index, Random.Range(1.0f, 1.0f), 1);
+
+    }
 }
