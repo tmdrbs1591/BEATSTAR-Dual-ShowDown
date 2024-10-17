@@ -56,6 +56,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     private string currentSongPath;
     void Awake()
     {
+        PhotonNetwork.LocalPlayer.NickName = UserInfo.Data.nickname;
+        Connect();
         Screen.SetResolution(960, 540, false);
         PhotonNetwork.AutomaticallySyncScene = true;
     }
@@ -148,7 +150,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         LobbyPanel.SetActive(true);
         RoomPanel.SetActive(false);
-        PhotonNetwork.LocalPlayer.NickName = NickNameInput.text;
         WelcomeText.text = PhotonNetwork.LocalPlayer.NickName + "님 환영합니다";
         myList.Clear();
     }
