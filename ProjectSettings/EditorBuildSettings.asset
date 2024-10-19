@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/07.Scenes/Stage1.unity
     guid: c65a14b27e9cc10449cbc9d6d2d87ebd
   - enabled: 1
-    path: Assets/07.Scenes/Stage2.unity
+    path: "Assets/07.Scenes/00.\uC778\uAC8C\uC784\uB4E4/Stage2.unity"
     guid: 67acac1fd5ee06f44994d09b4e39f9e4
   - enabled: 1
     path: Assets/07.Scenes/Stage3.unity
@@ -27,13 +27,13 @@ EditorBuildSettings:
     path: Assets/07.Scenes/Stage5.unity
     guid: 9298720aed7cf5449912cc5f793c233c
   - enabled: 1
-    path: Assets/07.Scenes/StagdeModeStage1.unity
+    path: "Assets/07.Scenes/00.\uC778\uAC8C\uC784\uB4E4/StagdeModeStage1.unity"
     guid: f7972dbb05d69cc42a7dc0b67933d05f
   - enabled: 1
-    path: Assets/07.Scenes/StagdeModeStage2.unity
+    path: "Assets/07.Scenes/00.\uC778\uAC8C\uC784\uB4E4/StagdeModeStage2.unity"
     guid: 60f4a6b8484224e4f93f44814e3c695e
   - enabled: 1
-    path: Assets/07.Scenes/StagdeModeStage3.unity
+    path: "Assets/07.Scenes/00.\uC778\uAC8C\uC784\uB4E4/StagdeModeStage3.unity"
     guid: 4bd033a3537252f4ba452cd9d7d4f558
   - enabled: 1
     path: Assets/07.Scenes/TTitle.unity
@@ -57,13 +57,13 @@ EditorBuildSettings:
     path: Assets/07.Scenes/Menu.unity
     guid: 52a0f36e16c0ff543be46180c515cefa
   - enabled: 1
-    path: Assets/07.Scenes/StageModeStage5.unity
+    path: "Assets/07.Scenes/00.\uC778\uAC8C\uC784\uB4E4/StageModeStage5.unity"
     guid: 9fc7878531799594fb378e2d20c0beb5
   - enabled: 1
     path: Assets/07.Scenes/Tutorial.unity
     guid: da63d6fc492c6434ab1dc6c96fa71dd7
   - enabled: 1
-    path: Assets/07.Scenes/Multiy/MultiStage1.unity
+    path: "Assets/07.Scenes/01.\uBA40\uD2F0\uB9F5/MultiStage1.unity"
     guid: 3ff43a3d965af2e4fa696415f4321836
   - enabled: 1
     path: Assets/07.Scenes/Multiy/00.Room.unity
