@@ -42,8 +42,12 @@ public class SettingButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
      
             StartCoroutine(AnimateButton());
         }
-        // 기본 메테리얼로 교체합니다.
-        buttonImage.material = originalMaterial;
+        if (buttonImage != null)
+        {
+            // 기본 메테리얼로 교체합니다.
+            buttonImage.material = originalMaterial;
+        }
+      
     }
     void Start()
     {

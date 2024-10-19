@@ -58,6 +58,8 @@ public class StageModeStageManager : MonoBehaviour
 
     [SerializeField] GameObject GravityPanel;
 
+    [SerializeField] GameObject warningPanel;
+
 
     bool charpanel = false;
 
@@ -158,10 +160,8 @@ public class StageModeStageManager : MonoBehaviour
             }
             else if (currentStage == Stage.ThirdTheFirstStage)
             {
-                AudioManager.instance.PlaySound(transform.position, 2, Random.Range(1.0f, 1.0f), 1);
-
-                Fadein.SetActive(true);
-                StartCoroutine(SceneLate("StagdeModeStage3"));
+                warningPanel.SetActive(true);
+                StartCoroutine(StartStageCor("StageMode5"));
             }
             else if (currentStage == Stage.ThirdTheSecondStage)
             {
@@ -186,8 +186,8 @@ public class StageModeStageManager : MonoBehaviour
             }
             else if (currentStage == Stage.FifthTheFirstStage)
             {
-                Fadein.SetActive(true);
-                StartCoroutine(SceneLate("StageModeStage5"));
+                warningPanel.SetActive(true);
+                StartCoroutine(StartStageCor("StageModeStage5"));
             }
             else if (currentStage == Stage.FifthTheSecondStage)
             {
@@ -218,6 +218,12 @@ public class StageModeStageManager : MonoBehaviour
             }
         }
 
+    }
+    public IEnumerator StartStageCor(string name)
+    {
+        yield return new WaitForSeconds(3f);
+        Fadein.SetActive(true);
+        StartCoroutine(SceneLate(name));
     }
     void FixedPanel()
     {
