@@ -16484,7 +16484,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1500750803
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19844,7 +19844,7 @@ MonoBehaviour:
   - {fileID: 1262864313}
   mapcolors: {r: 0.3490566, g: 0.10757088, b: 0.10757088, a: 1}
   Groundcolors: {r: 0.9622642, g: 0.29654676, b: 0.29654676, a: 1}
-  count: 3.77
+  count: 4.5
 --- !u!1 &1797122946
 GameObject:
   m_ObjectHideFlags: 0
@@ -24411,7 +24411,7 @@ PrefabInstance:
     - target: {fileID: 531245366235753290, guid: b2e4e08763e187948a438c1d621ed247, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 1f2f5ac4d2c6d0746b6e99870c634966, type: 3}
+      objectReference: {fileID: 8300000, guid: d72f771b8027c07439ec82eda71f1f62, type: 3}
     - target: {fileID: 1763310054524658060, guid: b2e4e08763e187948a438c1d621ed247, type: 3}
       propertyPath: m_Name
       value: 5stage Song

@@ -87,15 +87,26 @@ public class FourTrackStageBase : MonoBehaviour
             StartCoroutine(Clear(3f)); // 모든 노트가 생성되면 클리어 처리
 
         if (firstNote)
-            StartCoroutine(EffectTrue(0.4f, Glitch));// 첫 번째 노트가 생성되면 글리치 효과 발동
-        if (allNotes <= maxNotes - 3)
+            StartCoroutine(EffectTrue(1f, Flash));// 첫 번째 노트가 생성되면 글리치 효과 발동
+        if (allNotes == maxNotes - 117)
         {
-            StartCoroutine(EffectTrue(0.4f, Flash)); // 일정 수 이상의 노트가 생성되면 플래시 효과 발동
-            StartCoroutine(EffectFalse(0.4f, Glitch)); // 글리치 효과 해제
+            StartCoroutine(EffectTrue(0.4f, Glitch)); // 일정 수 이상의 노트가 생성되면 플래시 효과 발동
         }
-
+        if (allNotes == maxNotes - 244)
+        {
+            StartCoroutine(EffectFalse(0.4f, Glitch)); 
+        }
         currentTime += Time.deltaTime;// 현재 시간 증가
+        if (allNotes == maxNotes - 374)
+        {
+            StartCoroutine(EffectTrue(0.4f, Glitch)); // 일정 수 이상의 노트가 생성되면 플래시 효과 발동
+        }
+        if (allNotes == maxNotes - 592)
+        {
+            StartCoroutine(EffectFalse(0.4f, Glitch));
+            StartCoroutine(EffectFalse(0.4f, Flash));
 
+        }
     }
 
     protected IEnumerator QueueToSpawn(NoteInfo e) // 노트 생성을 위한 큐

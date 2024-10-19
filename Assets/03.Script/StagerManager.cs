@@ -64,7 +64,7 @@ public class StagerManager : MonoBehaviour
             CameraShake.instance.Shake();
 
             Fadein.SetActive(true);
-            StartCoroutine(SceneLate(1));
+            StartCoroutine(SceneLate("Stage1"));
         }
         else if (currentStage == Stage.SecondStage)
         {
@@ -72,7 +72,7 @@ public class StagerManager : MonoBehaviour
             CameraShake.instance.Shake();
 
             Fadein.SetActive(true);
-            StartCoroutine(SceneLate(2));
+            StartCoroutine(SceneLate("Stage2"));
         }   
         else if (currentStage == Stage.ThirdStage)
         {
@@ -80,7 +80,7 @@ public class StagerManager : MonoBehaviour
             CameraShake.instance.Shake();
 
             Fadein.SetActive(true);
-            StartCoroutine(SceneLate(3));
+            StartCoroutine(SceneLate("Stage3"));
         }
           else if (currentStage == Stage.fifthStage)
         {
@@ -88,7 +88,7 @@ public class StagerManager : MonoBehaviour
             CameraShake.instance.Shake();
 
             Fadein.SetActive(true);
-            StartCoroutine(SceneLate(4));
+            StartCoroutine(SceneLate("Stage5"));
         }
         else
         {
@@ -103,7 +103,7 @@ public class StagerManager : MonoBehaviour
         fixedPanel.SetActive(false);
         fixedPanel.SetActive(true);
     }
-    IEnumerator SceneLate(int num)
+    IEnumerator SceneLate(string num)
     {
         isStart = true;// 게임 시작 플래그 설정
         yield return new WaitForSeconds(0.7f); // 0.7초 대기 후 씬 로드

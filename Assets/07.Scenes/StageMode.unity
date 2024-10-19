@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Song Text
+  m_text: Digital Drive
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: acabbe18e6cb1984f9f2cd1f7d3cf66a, type: 2}
   m_sharedMaterial: {fileID: 1138779979492190917, guid: acabbe18e6cb1984f9f2cd1f7d3cf66a, type: 2}
@@ -1167,7 +1167,7 @@ MonoBehaviour:
   cdSprites:
   - {fileID: 21300000, guid: 3bdb5aa3db4096941b9a3f96b234cd3d, type: 3}
   - {fileID: 21300000, guid: e4ca72d55a1c1b54bb45e5124331ee18, type: 3}
-  - {fileID: 21300000, guid: 45e0b14842cd47043b6ad2922d8c6e42, type: 3}
+  - {fileID: 21300000, guid: 526720fb57e4e9848962a6062ca5cedc, type: 3}
   - {fileID: 21300000, guid: 45e0b14842cd47043b6ad2922d8c6e42, type: 3}
   - {fileID: 21300000, guid: 45e0b14842cd47043b6ad2922d8c6e42, type: 3}
   - {fileID: 21300000, guid: 45e0b14842cd47043b6ad2922d8c6e42, type: 3}
@@ -23346,7 +23346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 2073693592}
   targetImage: {fileID: 528176375}
-  scaleMultiplier: 0.4
+  scaleMultiplier: 0.8
   smoothSpeed: 0.07
 --- !u!1 &528350609
 GameObject:
@@ -26723,7 +26723,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 2073693592}
   targetImage: {fileID: 608635160}
-  scaleMultiplier: 0.4
+  scaleMultiplier: 0.8
   smoothSpeed: 0.07
 --- !u!1 &610285345
 GameObject:
@@ -28543,7 +28543,7 @@ MonoBehaviour:
   - Stage1
   - Stage1
   - Stage1
-  - Stage5-1
+  - FourTrack-Stage5-1
   - TestFourTrack
   - TestFourTrack
   - TestFourTrack
@@ -81122,7 +81122,7 @@ MonoBehaviour:
   cdSprites:
   - {fileID: 21300000, guid: 5e3fc7d114734a740b4e1e5d04411bed, type: 3}
   - {fileID: 21300000, guid: 5dddc8861916d354a921a7f6899cc877, type: 3}
-  - {fileID: 21300000, guid: 45e0b14842cd47043b6ad2922d8c6e42, type: 3}
+  - {fileID: 21300000, guid: 99bcbf0cc0d056e4380c7555e8ecb07a, type: 3}
   - {fileID: 21300000, guid: 45e0b14842cd47043b6ad2922d8c6e42, type: 3}
   - {fileID: 21300000, guid: 45e0b14842cd47043b6ad2922d8c6e42, type: 3}
   - {fileID: 21300000, guid: 45e0b14842cd47043b6ad2922d8c6e42, type: 3}
@@ -88483,7 +88483,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0c5a6d0dbb6e2fa45b5b98661320f3b4, type: 3}
   - {fileID: 8300000, guid: 8a5d7cbdbacfbbd46a53a16244a19493, type: 3}
   - {fileID: 8300000, guid: fb0fb8613efee934881f78c3fa1f3ba9, type: 3}
-  - {fileID: 8300000, guid: 8a5d7cbdbacfbbd46a53a16244a19493, type: 3}
+  - {fileID: 8300000, guid: 4cc12c87e9fdd9f4aac4dbacd29b1c1e, type: 3}
   - {fileID: 8300000, guid: 8a5d7cbdbacfbbd46a53a16244a19493, type: 3}
   - {fileID: 8300000, guid: 8a5d7cbdbacfbbd46a53a16244a19493, type: 3}
   - {fileID: 8300000, guid: 8a5d7cbdbacfbbd46a53a16244a19493, type: 3}
