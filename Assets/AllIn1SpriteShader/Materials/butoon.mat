@@ -125,8 +125,8 @@ Material:
     - _Glow: 10
     - _GlowGlobal: 1
     - _GradBlend: 1
-    - _GradBoostX: 3.55
-    - _GradBoostY: 1.8
+    - _GradBoostX: 0.1
+    - _GradBoostY: 0.45
     - _GradIsRadial: 0
     - _GrassManualAnim: 1
     - _GrassManualToggle: 0
@@ -232,10 +232,10 @@ Material:
     - _ColorSwapRed: {r: 1, g: 1, b: 1, a: 1}
     - _FadeBurnColor: {r: 1, g: 1, b: 0, a: 1}
     - _GlowColor: {r: 1, g: 1, b: 1, a: 1}
-    - _GradBotLeftCol: {r: 0, g: 0.07433618, b: 0.3490566, a: 1}
-    - _GradBotRightCol: {r: 0.2009167, g: 0.990566, b: 0.2009167, a: 1}
-    - _GradTopLeftCol: {r: 0.44029891, g: 0.16642934, b: 0.6415094, a: 1}
-    - _GradTopRightCol: {r: 0.1509434, g: 0.1509434, b: 0.13456747, a: 1}
+    - _GradBotLeftCol: {r: 1, g: 1, b: 1, a: 1}
+    - _GradBotRightCol: {r: 0, g: 0.8584099, b: 1, a: 1}
+    - _GradTopLeftCol: {r: 1, g: 1, b: 1, a: 1}
+    - _GradTopRightCol: {r: 0.08760104, g: 0, b: 0.6132076, a: 1}
     - _GreyscaleTintColor: {r: 1, g: 1, b: 1, a: 1}
     - _HitEffectColor: {r: 1, g: 1, b: 1, a: 1}
     - _HologramStripeColor: {r: 0, g: 1, b: 1, a: 1}
