@@ -37,6 +37,7 @@ public class AchievementUI : MonoBehaviour
             GameObject achievementObj = Instantiate(achievementPrefab, content);
             TMP_Text nameText = achievementObj.transform.Find("AchievementNameText").GetComponent<TMP_Text>();
             TMP_Text descriptionText = achievementObj.transform.Find("AchievementDescriptionText").GetComponent<TMP_Text>();
+            Slider progressSlider = achievementObj.transform.Find("ProgressSlider").GetComponent<Slider>(); // 진행도 슬라이더
             TMP_Text progressText = achievementObj.transform.Find("ProgressText").GetComponent<TMP_Text>(); // 진행도 텍스트
             Button rewardButton = achievementObj.GetComponentInChildren<Button>();
             TMP_Text rewardCurrencyText = rewardButton.transform.Find("RewardCurrencyText").GetComponent<TMP_Text>(); // RewardCurrencyText
@@ -45,8 +46,14 @@ public class AchievementUI : MonoBehaviour
 
             nameText.text = achievement.name;
             descriptionText.text = achievement.description;
-            // 진행도 표시
-            progressText.text = achievement.currentValue + "/" + achievement.target;
+
+            // 슬라이더의 최대값과 현재값 설정
+            progressSlider.maxValue = achievement.target;
+            progressSlider.value = achievement.currentValue;
+
+            // 진행도 텍스트 업데이트 (현재 값 / 목표 값 형식)
+            progressText.text = $"{achievement.currentValue} / {achievement.target}";
+
             rewardCurrencyText.text = achievement.rewardCurrency.ToString();
 
             if (!achievement.isRealCompleted)
@@ -67,10 +74,8 @@ public class AchievementUI : MonoBehaviour
             }
             else
             {
-                realCompleteImage.SetActive(true); // 완료 이미지 비활성화
+                realCompleteImage.SetActive(true); // 완료 이미지 활성화
             }
-
-
         }
     }
 
@@ -83,9 +88,7 @@ public class AchievementUI : MonoBehaviour
                 achievement.GiveReward(); // 보상 지급
                 button.interactable = false; // 버튼 비활성화
                 completeImage.SetActive(true); // 완료 이미지 활성화
-                                               // UpdateAchievementList(); // UI 갱신 호출을 여기서 제거
                 achievement.isRealCompleted = true;
-
             }
         }
     }

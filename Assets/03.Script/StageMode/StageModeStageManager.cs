@@ -160,8 +160,10 @@ public class StageModeStageManager : MonoBehaviour
             }
             else if (currentStage == Stage.ThirdTheFirstStage)
             {
-                warningPanel.SetActive(true);
-                StartCoroutine(StartStageCor("StageMode5"));
+                AudioManager.instance.PlaySound(transform.position, 2, Random.Range(1.0f, 1.0f), 1);
+
+                Fadein.SetActive(true);
+                StartCoroutine(SceneLate("StagdeModeStage3"));
             }
             else if (currentStage == Stage.ThirdTheSecondStage)
             {
