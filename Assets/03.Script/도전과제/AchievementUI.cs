@@ -40,6 +40,7 @@ public class AchievementUI : MonoBehaviour
             TMP_Text progressText = achievementObj.transform.Find("ProgressText").GetComponent<TMP_Text>(); // 진행도 텍스트
             Button rewardButton = achievementObj.GetComponentInChildren<Button>();
             TMP_Text rewardCurrencyText = rewardButton.transform.Find("RewardCurrencyText").GetComponent<TMP_Text>(); // RewardCurrencyText
+            GameObject realCompleteImage = achievementObj.transform.Find("RealCompleteImage").gameObject; // Complete 이미지
             GameObject completeImage = achievementObj.transform.Find("CompleteImage").gameObject; // Complete 이미지
 
             nameText.text = achievement.name;
@@ -48,18 +49,28 @@ public class AchievementUI : MonoBehaviour
             progressText.text = achievement.currentValue + "/" + achievement.target;
             rewardCurrencyText.text = achievement.rewardCurrency.ToString();
 
-            // 도전 과제가 완료되었으면 버튼 활성화
-            if (achievement.isCompleted)
+            if (!achievement.isRealCompleted)
             {
-                rewardButton.interactable = true; // 도전 과제가 완료된 경우 버튼 활성화
-                rewardButton.onClick.RemoveAllListeners(); // 기존 리스너 제거
-                rewardButton.onClick.AddListener(() => RewardAchievement(achievement, rewardButton, completeImage)); // 클릭 시 보상 메서드 호출
+                // 도전 과제가 완료되었으면 버튼 활성화
+                if (achievement.isCompleted)
+                {
+                    rewardButton.interactable = true; // 도전 과제가 완료된 경우 버튼 활성화
+                    rewardButton.onClick.RemoveAllListeners(); // 기존 리스너 제거
+                    rewardButton.onClick.AddListener(() => RewardAchievement(achievement, rewardButton, realCompleteImage)); // 클릭 시 보상 메서드 호출
+                    completeImage.SetActive(true);
+                }
+                else
+                {
+                    rewardButton.interactable = false; // 도전 과제가 완료되지 않은 경우 버튼 비활성화
+                    realCompleteImage.SetActive(false); // 완료 이미지 비활성화
+                }
             }
             else
             {
-                rewardButton.interactable = false; // 도전 과제가 완료되지 않은 경우 버튼 비활성화
-                completeImage.SetActive(false); // 완료 이미지 비활성화
+                realCompleteImage.SetActive(true); // 완료 이미지 비활성화
             }
+
+
         }
     }
 
@@ -72,7 +83,9 @@ public class AchievementUI : MonoBehaviour
                 achievement.GiveReward(); // 보상 지급
                 button.interactable = false; // 버튼 비활성화
                 completeImage.SetActive(true); // 완료 이미지 활성화
-                // UpdateAchievementList(); // UI 갱신 호출을 여기서 제거
+                                               // UpdateAchievementList(); // UI 갱신 호출을 여기서 제거
+                achievement.isRealCompleted = true;
+
             }
         }
     }

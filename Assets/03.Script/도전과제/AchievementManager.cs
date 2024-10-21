@@ -25,6 +25,10 @@ public class AchievementManager : MonoBehaviour
         {
             AchievementManager.instance.AddProgress("첫 발자국", 1);
         }
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            AchievementManager.instance.AddProgress("리듬의 조율", 1);
+        }
     }
     private void Start()
     {
@@ -37,16 +41,11 @@ public class AchievementManager : MonoBehaviour
         Achievement achievement = achievements.Find(a => a.name == achievementName);
         if (achievement != null)
         {
-            achievement.UpdateProgress(amount);
-
-            // 도전 과제가 완료되면 UI 갱신 호출
-            if (achievement.isCompleted && !achievement.isRewarded) // 보상을 받지 않은 경우에만 갱신
-            {
-                AchievementUI.instance.UpdateAchievementList(); // UI 갱신
-                achievement.isRewarded = true; // 보상을 받았음을 표시
-            }
+            achievement.UpdateProgress(amount); // 진행도 업데이트
+            AchievementUI.instance.UpdateAchievementList(); // 즉시 UI 갱신
         }
     }
+
 
 
 }
