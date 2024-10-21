@@ -11,7 +11,7 @@ public class Achievement
     public int currentValue;
     public bool isCompleted;
     public int rewardCurrency;
-
+    public bool isRewarded; // 보상을 받았는지 여부
     public void UpdateProgress(int amount)
     {
         if (!isCompleted)

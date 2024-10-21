@@ -30676,60 +30676,70 @@ MonoBehaviour:
     currentValue: 0
     isCompleted: 0
     rewardCurrency: 200
+    isRewarded: 0
   - name: "\uCCAB \uBC1C\uC790\uAD6D"
     description: "1-1 \uC2A4\uD14C\uC774\uC9C0 \uD074\uB9AC\uC5B4\uD558\uAE30"
     target: 1
     currentValue: 0
     isCompleted: 0
     rewardCurrency: 200
+    isRewarded: 0
   - name: "\uB9AC\uB4EC\uC758 \uC870\uC728"
     description: "1-5 \uC2A4\uD14C\uC774\uC9C0 \uD074\uB9AC\uC5B4\uD558\uAE30"
     target: 1
     currentValue: 0
     isCompleted: 0
     rewardCurrency: 200
-  - name: "\uB9AC\uB4EC\uC5D0 \uBAB8\uC744 \uB9E1\uAE30\uB2E4"
-    description: "5\uD68C \uC5F0\uC18D \uCF64\uBCF4 \uB2EC\uC131\uD558\uAE30"
-    target: 5
-    currentValue: 0
-    isCompleted: 0
-    rewardCurrency: 300
+    isRewarded: 0
   - name: "\uACE1\uC758 \uB300\uAC00"
-    description: "\uBAA8\uB4E0 1\uB2E8\uACC4 \uACE1 \uD074\uB9AC\uC5B4\uD558\uAE30"
+    description: "1\uB2E8\uACC4 \uBAA8\uB4E0 \uACE1 \uD074\uB9AC\uC5B4\uD558\uAE30"
     target: 8
     currentValue: 0
     isCompleted: 0
-    rewardCurrency: 800
+    rewardCurrency: 600
+    isRewarded: 0
+  - name: "\uBE44\uD2B8 \uB9C8\uC2A4\uD130"
+    description: "10\uD68C \uC5F0\uC18D \uCF64\uBCF4 \uB2EC\uC131\uD558\uAE30"
+    target: 1
+    currentValue: 0
+    isCompleted: 0
+    rewardCurrency: 200
+    isRewarded: 0
   - name: "\uB9C8\uC2A4\uD130\uC758 \uAE38"
     description: "S\uB7AD\uD06C \uB2EC\uC131\uD558\uAE30"
     target: 1
     currentValue: 0
     isCompleted: 0
-    rewardCurrency: 200
-  - name: "\uACBD\uD5D8\uC758 \uAE38"
-    description: "\uB808\uBCA8 5 \uB2EC\uC131\uD558\uAE30"
-    target: 5
+    rewardCurrency: 300
+    isRewarded: 0
+  - name: "\uD504\uB9AC \uC2A4\uD0C0\uC77C"
+    description: "\uC790\uC720 \uBAA8\uB4DC\uC5D0\uC11C \uACE1 \uD074\uB9AC\uC5B4\uD558\uAE30"
+    target: 1
     currentValue: 0
     isCompleted: 0
-    rewardCurrency: 200
-  - name: "\uB9AC\uB4EC \uB9C8\uC2A4\uD130!"
-    description: "\uD480\uCF64\uBCF4 \uB2EC\uC131\uD558\uAE30"
+    rewardCurrency: 400
+    isRewarded: 0
+  - name: "\uC2A4\uD0AC \uB9C8\uC2A4\uD130"
+    description: "\uC2A4\uD0AC 10\uD68C \uC0AC\uC6A9\uD558\uAE30"
+    target: 10
+    currentValue: 0
+    isCompleted: 0
+    rewardCurrency: 300
+    isRewarded: 0
+  - name: "\uD37C\uD399\uD2B8 "
+    description: "100% \uC815\uD655\uB3C4\uB85C \uD074\uB9AC\uC5B4\uD558\uAE30"
     target: 1
     currentValue: 0
     isCompleted: 0
     rewardCurrency: 300
-  - name: "\uD504\uB9AC \uC2A4\uD0C0\uC77C"
-    description: "\uC790\uC720 \uBAA8\uB4DC\uC5D0\uC11C 1\uACE1 \uD074\uB9AC\uC5B4\uD558\uAE30"
-    target: 1
+    isRewarded: 0
+  - name: "\uC2A4\uD14C\uC774\uC9C0\uC758 \uC9C0\uBC30\uC790"
+    description: "\uBAA8\uB4E0 1\uC2A4\uD14C\uC774\uC9C0 S\uB7AD\uD06C \uB2EC\uC131\uD558\uAE30"
+    target: 8
     currentValue: 0
     isCompleted: 0
-    rewardCurrency: 100
-  - name: "\uD53C\uBC84!"
-    description: "\uD53C\uBC84\uD0C0\uC784 10\uD68C \uB2EC\uC131\uD558\uAE30"
-    target: 10
-    currentValue: 0
-    isCompleted: 0
-    rewardCurrency: 200
+    rewardCurrency: 1200
+    isRewarded: 0
 --- !u!4 &1148595761
 Transform:
   m_ObjectHideFlags: 0
