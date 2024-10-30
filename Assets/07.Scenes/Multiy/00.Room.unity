@@ -6658,7 +6658,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1868692589}
         m_TargetAssemblyTypeName: NetworkManager, Assembly-CSharp
-        m_MethodName: Disconnect
+        m_MethodName: LeaveRoom
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

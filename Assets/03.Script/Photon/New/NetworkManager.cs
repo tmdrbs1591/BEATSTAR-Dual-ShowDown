@@ -180,7 +180,10 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         PhotonNetwork.CreateRoom(roomName, roomOptions);
         RoomCodeText.text = "Room Code: " + roomCode; // UI에 방 코드 표시
     }
-
+    public void LeaveRoom()
+    {
+        PhotonNetwork.LeaveRoom();
+    }
     // 사용자가 방 코드 입력 후 참가
     public void JoinRoomWithCode()
     {

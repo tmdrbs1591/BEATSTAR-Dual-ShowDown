@@ -25911,7 +25911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22fa62eca1d192c49b27771c35c740a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentCharater: 0
+  currentCharater: 1
   songPath: 
 --- !u!4 &580674715
 Transform:
@@ -35918,7 +35918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22fa62eca1d192c49b27771c35c740a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentCharater: 0
+  currentCharater: 1
   songPath: 
 --- !u!4 &729146326
 Transform:

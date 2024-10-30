@@ -16,6 +16,8 @@ public class FeverManager : MonoBehaviour
     [SerializeField] float[] weight = null;// 판정 상태에 따른 가중치 배열
     [SerializeField] int comboBonusScore = 10; // 콤보 보너스 점수
 
+    [SerializeField] Visualizer visualizer;
+
 
     ComboManager theComboManager; // 콤보 관리자
 
@@ -66,6 +68,11 @@ public class FeverManager : MonoBehaviour
        // AudioManager.instance.PlaySound(transform.position, 6, Random.Range(1f, 1f), 1);// 오디오 재생
         feverTime = true; // 피버타임 시작
         feverSlider.value = 1f; // 초기값을 현재 값으로 설정
+        if (visualizer != null)
+        {
+            visualizer.heightMultiplier *= 2;
+            visualizer.SetPrefab(true);
+        }
         StartCoroutine(FeverTime());// 피버타임 코루틴 시작
     }
 
@@ -90,6 +97,13 @@ public class FeverManager : MonoBehaviour
         currentScore = 0; // 피버타임 종료 후 점수 초기화
         feverSlider.value = 0f; // 슬라이더도 초기화
         feverTime = false; // 피버타임 종료
+        if (visualizer != null)
+        {
+            visualizer.heightMultiplier /= 2;
+            visualizer.SetPrefab(false);
+        }
+      
+
         Effect.SetActive(false);
     }
 
