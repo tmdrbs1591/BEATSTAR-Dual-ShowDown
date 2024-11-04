@@ -25,6 +25,10 @@ public class ClearPanel : MonoBehaviour
         {
             image.sprite = sprites[2];// 세번째 캐릭터에 해당하는 스프라이트
         }
+        else if (DataManager.instance.currentCharater == Character.Green)
+        {
+            image.sprite = sprites[3];// 세번째 캐릭터에 해당하는 스프라이트
+        }
     }
 
     void Update()
