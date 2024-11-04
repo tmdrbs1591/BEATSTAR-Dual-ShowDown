@@ -65,7 +65,7 @@ public class LinaSkill : MonoBehaviour
         AutoBox.SetActive(false);
         SkillParticl.SetActive(false);
     }
-
+    
     IEnumerator SkillPanelCor()
     {
         SkillPanel.SetActive(true);
