@@ -12996,7 +12996,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0e945ec2a559a4144bd6ca6fcd5365e9, type: 2}
+  - {fileID: 2100000, guid: d9c34f192a6c5184f856e021b47c4a99, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -28451,7 +28451,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0e945ec2a559a4144bd6ca6fcd5365e9, type: 2}
+  - {fileID: 2100000, guid: d9c34f192a6c5184f856e021b47c4a99, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39538,6 +39538,7 @@ GameObject:
   - component: {fileID: 1824151719}
   - component: {fileID: 1824151718}
   - component: {fileID: 1824151717}
+  - component: {fileID: 1824151722}
   m_Layer: 0
   m_Name: Player4
   m_TagString: Untagged
@@ -39564,8 +39565,8 @@ MonoBehaviour:
   WPanel: {fileID: 1427607492}
   EPanel: {fileID: 136425354}
   Death: 0
-  MaxHP: 15
-  CurHP: 15
+  MaxHP: 150
+  CurHP: 150
   appearPosition: {x: -6.55, y: -2.58}
   HpBar: {fileID: 712214612}
   HpBar2: {fileID: 1222533914}
@@ -39580,7 +39581,7 @@ Animator:
   m_GameObject: {fileID: 1824151716}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 20d29847e413200489389b5776069c84, type: 2}
+  m_Controller: {fileID: 9100000, guid: dcbd60f98bfaa064385d34df22d2f035, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -39655,8 +39656,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 471365522, guid: ba7be10f31c57244f9e6e1437b36aff4, type: 3}
-  m_Color: {r: 0.0919861, g: 0.9056604, b: 0, a: 1}
+  m_Sprite: {fileID: -643922281, guid: e31b11fef3928144aa8dc0ddc543445b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -39685,6 +39686,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1824151722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824151716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17c60956793237b43802e47f8a43d255, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AutoBox: {fileID: 1663339782}
+  SkillPanel: {fileID: 891307631}
+  SkillParticl: {fileID: 1029179675}
+  skillCooldownImage: {fileID: 1575631398}
+  skillCooldownText: {fileID: 1628060935}
+  skillCoolTime: 20
+  skillpossible: 1
 --- !u!1 &1827846717
 GameObject:
   m_ObjectHideFlags: 0
