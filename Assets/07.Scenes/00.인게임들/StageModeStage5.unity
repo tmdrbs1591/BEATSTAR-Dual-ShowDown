@@ -14847,6 +14847,7 @@ MonoBehaviour:
   - {fileID: 1251377079}
   - {fileID: 1701642818}
   - {fileID: 189070083}
+  - {fileID: 1824151716}
   player: {fileID: 527349972}
 --- !u!4 &527349974
 Transform:
@@ -75538,10 +75539,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1824151721}
   - component: {fileID: 1824151720}
-  - component: {fileID: 1824151719}
-  - component: {fileID: 1824151722}
   - component: {fileID: 1824151718}
   - component: {fileID: 1824151717}
+  - component: {fileID: 1824151722}
   m_Layer: 0
   m_Name: Player4
   m_TagString: Untagged
@@ -75595,29 +75595,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1824151719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1824151716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d1299002da07dd489479aca546049da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 1824151717}
-  buttonManager: {fileID: 0}
-  Q: {fileID: 509234774}
-  W: {fileID: 589251939}
-  E: {fileID: 54316594}
-  laserRotation: {fileID: 610680224}
-  QWEEffect: {fileID: 0}
-  lasers:
-  - {fileID: 369459123}
-  - {fileID: 1269415677}
-  animator: {fileID: 0}
 --- !u!212 &1824151720
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -75701,15 +75678,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92da21853cbbb4b408bb309c61906143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
+  controller: {fileID: 1824151717}
   buttonManager: {fileID: 616009664}
-  Q: {fileID: 1580747471}
-  W: {fileID: 0}
-  E: {fileID: 0}
-  R: {fileID: 0}
-  laserRotation: {fileID: 0}
-  QWEEffect: {fileID: 0}
-  lasers: []
+  Q: {fileID: 610680225}
+  W: {fileID: 509234774}
+  E: {fileID: 589251939}
+  R: {fileID: 54316594}
+  laserRotation: {fileID: 922852838}
+  QWEEffect: {fileID: 2083786919}
+  lasers:
+  - {fileID: 935682661}
+  - {fileID: 460719085}
+  - {fileID: 238291301}
   animator: {fileID: 0}
 --- !u!1 &1827846717
 GameObject:

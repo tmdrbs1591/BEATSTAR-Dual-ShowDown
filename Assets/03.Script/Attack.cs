@@ -16,6 +16,7 @@ public class Attack : MonoBehaviour
 
     public Animator animator; // 애니메이터
 
+    public int soundIndex;
     private void Start()
     {
         animator = GetComponent<Animator>(); // 초기화
@@ -32,18 +33,21 @@ public class Attack : MonoBehaviour
             }
             else if (Input.GetKeyDown(KeySetting.keys[KeyAction.Q])) // Q누르기
             {
+                AudioManager.instance.PlaySound(transform.position, soundIndex, Random.Range(1f, 1.3f), 1f);
                 animator.SetTrigger("QAttack"); // Q 애니메이션 트리거 키기
                 RotateLaser(Q); // 레이저를 Transform 매개변수 Q 방향으로 Rotate
                 StartCoroutine(laserSetActive()); // 총알 발사 이펙트
             }
             else if (Input.GetKeyDown(KeySetting.keys[KeyAction.W]))
             {
+                AudioManager.instance.PlaySound(transform.position, soundIndex, Random.Range(1f, 1.3f), 1f);
                 animator.SetTrigger("WAttack"); // W애니메이ㅕ션 트리거 켜기 
                 RotateLaser(W); // 레이저를 Transform 매개변수 E방향으로 Rotate
                 StartCoroutine(laserSetActive()); // 총알 발사 이펙트
             }
             else if (Input.GetKeyDown(KeySetting.keys[KeyAction.E]))
             {
+                AudioManager.instance.PlaySound(transform.position, soundIndex, Random.Range(1f, 1.3f), 1f);
                 animator.SetTrigger("EAttack"); // E애니메이션 트리거 켜기
                 RotateLaser(E); // 레이저를 Transform 매개변수 E방향으로 Rotate
                 StartCoroutine(laserSetActive());// 총알 발사 이펙트

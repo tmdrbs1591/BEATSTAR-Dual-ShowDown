@@ -2506,6 +2506,7 @@ MonoBehaviour:
   - {fileID: 469186063}
   - {fileID: 1298979076}
   animator: {fileID: 0}
+  soundIndex: 0
 --- !u!212 &189070087
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2941,6 +2942,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a5c803c6f1862634e8b037e67921ded8, type: 3}
   - {fileID: 8300000, guid: 86119e5719a387b4fba6760edb6a2fdc, type: 3}
   - {fileID: 8300000, guid: 60ee29e809522b043a095b6cdb7eb18a, type: 3}
+  - {fileID: 8300000, guid: fcd988d81a3618b4d9760861c54dec87, type: 3}
   songs: []
   audioObject: {fileID: 708117791136189665, guid: b444c2fc411f8634280b8dc8959ab1ac, type: 3}
 --- !u!4 &252852440
@@ -11376,6 +11378,7 @@ MonoBehaviour:
   - {fileID: 1191763503}
   - {fileID: 1833109147}
   animator: {fileID: 0}
+  soundIndex: 0
 --- !u!95 &1251377084
 Animator:
   serializedVersion: 5
@@ -14132,6 +14135,7 @@ MonoBehaviour:
   - {fileID: 79902047}
   - {fileID: 1900122674}
   animator: {fileID: 0}
+  soundIndex: 0
 --- !u!212 &1701642822
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15339,6 +15343,7 @@ MonoBehaviour:
   - {fileID: 369459123}
   - {fileID: 1269415677}
   animator: {fileID: 0}
+  soundIndex: 17
 --- !u!212 &1824151720
 SpriteRenderer:
   m_ObjectHideFlags: 0
