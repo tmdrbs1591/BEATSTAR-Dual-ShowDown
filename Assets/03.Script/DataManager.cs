@@ -23,4 +23,23 @@ public class DataManager : MonoBehaviour
     public Character currentCharater; // 현재 선택된 캐릭터를 저장할 변수
     public string songPath;// 선택된 곡의 경로를 저장할 변수
 
+
+    public void CharChange(string name)
+    {
+        switch (name)
+        {
+            case "Lina":
+                currentCharater = Character.White;
+                    break;
+            case "LinRan":
+                currentCharater = Character.Red;
+                break;
+            case "Seon":
+                currentCharater = Character.Blue;
+                break;
+            case "Spark":
+                currentCharater = Character.Green;
+                break;
+        }
+    }
 }
