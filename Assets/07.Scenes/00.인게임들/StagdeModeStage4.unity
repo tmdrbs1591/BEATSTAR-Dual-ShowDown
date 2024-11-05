@@ -74011,7 +74011,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 0441df6485a4e9d4ca598a0046643a79, type: 3}
   - {fileID: 21300000, guid: a2383149fe362d14687bfc03f2ced7ae, type: 3}
   - {fileID: 21300000, guid: d224f166cd86bf84793770fca36dfc99, type: 3}
-  - {fileID: 21300000, guid: ddda13a6c2af2da4082e1a43b0b10a92, type: 3}
+  - {fileID: 21300000, guid: 42495023ea2d73e44a03b69c29262d22, type: 3}
   spriteRenderer: {fileID: 306798025}
 --- !u!331 &1728220184
 SpriteMask:

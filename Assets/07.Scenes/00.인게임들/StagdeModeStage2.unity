@@ -69099,7 +69099,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 0441df6485a4e9d4ca598a0046643a79, type: 3}
   - {fileID: 21300000, guid: a2383149fe362d14687bfc03f2ced7ae, type: 3}
   - {fileID: 21300000, guid: d224f166cd86bf84793770fca36dfc99, type: 3}
-  - {fileID: 21300000, guid: ddda13a6c2af2da4082e1a43b0b10a92, type: 3}
+  - {fileID: 21300000, guid: 42495023ea2d73e44a03b69c29262d22, type: 3}
   spriteRenderer: {fileID: 1946819404}
 --- !u!331 &1600301097
 SpriteMask:
@@ -80955,7 +80955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songs:
   - {fileID: 8300000, guid: 0c5a6d0dbb6e2fa45b5b98661320f3b4, type: 3}
-  - {fileID: 8300000, guid: 8a5d7cbdbacfbbd46a53a16244a19493, type: 3}
+  - {fileID: 8300000, guid: e9cdf9dd83857c04d986949200144c0b, type: 3}
   - {fileID: 8300000, guid: 5519f4e298af14f4e83d087afdc67fe0, type: 3}
   - {fileID: 8300000, guid: 51b31adeeb995164d9653e2d3f0f5ff2, type: 3}
   - {fileID: 8300000, guid: 4dfae81a19c6b6b469b7da84808fb635, type: 3}
