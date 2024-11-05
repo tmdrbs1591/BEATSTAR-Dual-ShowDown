@@ -16,6 +16,7 @@ public class FourTrackAttack: MonoBehaviour
     public List<GameObject> lasers; // 리스트로 laser GameObject들을 관리
 
     public Animator animator;// 애니메이터 컴포넌트
+    public int soundIndex;
 
     private void Start()
     {
@@ -29,29 +30,34 @@ public class FourTrackAttack: MonoBehaviour
             // 모든 키(D, F, J, K)를 동시에 눌렀을 때
             if ((Input.GetKey(KeySetting.keys[KeyAction.D]) && Input.GetKey(KeySetting.keys[KeyAction.F]) && Input.GetKey(KeySetting.keys[KeyAction.J]) && Input.GetKey(KeySetting.keys[KeyAction.K])) )
             {
+                AudioManager.instance.PlaySound(transform.position, soundIndex, Random.Range(1f, 1.3f), 1f);
                 QWEEffect.SetActive(true); ; // QWEEfffect 활성화
                 TripleAttack();// 랜덤한 트리플 공격 실행
             }
             else if (Input.GetKeyDown(KeySetting.keys[KeyAction.D]))  // 개별 공격 키 입력 시
             {
+                AudioManager.instance.PlaySound(transform.position, soundIndex, Random.Range(1f, 1.3f), 1f);
                 animator.SetTrigger("QAttack");// Q 공격 애니메이션 실행
                 RotateLaser(Q); // Q 레이저 회전
                 StartCoroutine(laserSetActive());// 레이저 활성화 코루틴 실행
             }
             else if (Input.GetKeyDown(KeySetting.keys[KeyAction.F]))
             {
+                AudioManager.instance.PlaySound(transform.position, soundIndex, Random.Range(1f, 1.3f), 1f);
                 animator.SetTrigger("WAttack");// W 공격 애니메이션 실행
                 RotateLaser(W);// W 레이저 회전
                 StartCoroutine(laserSetActive()); // 레이저 활성화 코루틴 실행
             }
             else if (Input.GetKeyDown(KeySetting.keys[KeyAction.J]))
             {
+                AudioManager.instance.PlaySound(transform.position, soundIndex, Random.Range(1f, 1.3f), 1f);
                 animator.SetTrigger("EAttack"); // E 공격 애니메이션 실행
                 RotateLaser(E);// E 레이저 회전
                 StartCoroutine(laserSetActive());// 레이저 활성화 코루틴 실행
             }
             else if (Input.GetKeyDown(KeySetting.keys[KeyAction.K]))
             {
+                AudioManager.instance.PlaySound(transform.position, soundIndex, Random.Range(1f, 1.3f), 1f);
                 animator.SetTrigger("EAttack");// E 공격 애니메이션 실행
                 RotateLaser(R);// R 레이저 회전
                 StartCoroutine(laserSetActive()); // 레이저 활성화 코루틴 실행

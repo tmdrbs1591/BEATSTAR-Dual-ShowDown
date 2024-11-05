@@ -5974,7 +5974,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3-2
+  m_text: 4-2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ac8403b0a2f4ff49920055d441ca3a7, type: 2}
   m_sharedMaterial: {fileID: -8840172308850977635, guid: 1ac8403b0a2f4ff49920055d441ca3a7, type: 2}
@@ -8329,7 +8329,7 @@ GameObject:
   - component: {fileID: 204615541}
   - component: {fileID: 204615540}
   m_Layer: 5
-  m_Name: Stage3-5
+  m_Name: Stage4-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37462,8 +37462,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 3-8
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ce1c39dc543a96344a5f67de96b2a367, type: 2}
-  m_sharedMaterial: {fileID: 2952003651432021203, guid: ce1c39dc543a96344a5f67de96b2a367, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1ac8403b0a2f4ff49920055d441ca3a7, type: 2}
+  m_sharedMaterial: {fileID: -8840172308850977635, guid: 1ac8403b0a2f4ff49920055d441ca3a7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -38102,7 +38102,7 @@ GameObject:
   - component: {fileID: 721289517}
   - component: {fileID: 721289516}
   m_Layer: 5
-  m_Name: Stage3-6
+  m_Name: Stage4-6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45349,7 +45349,7 @@ GameObject:
   - component: {fileID: 792688204}
   - component: {fileID: 792688203}
   m_Layer: 5
-  m_Name: Stage3-7
+  m_Name: Stage4-7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50246,7 +50246,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 881420630}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1007174037}
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+        m_MethodName: PanelSetActive
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 947851891}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &881420630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54483,7 +54495,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3-6
+  m_text: 4-6
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ac8403b0a2f4ff49920055d441ca3a7, type: 2}
   m_sharedMaterial: {fileID: -8840172308850977635, guid: 1ac8403b0a2f4ff49920055d441ca3a7, type: 2}
@@ -62290,7 +62302,7 @@ GameObject:
   - component: {fileID: 1199155683}
   - component: {fileID: 1199155682}
   m_Layer: 5
-  m_Name: Stage3-3
+  m_Name: Stage4-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69304,7 +69316,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3-3
+  m_text: 4-3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ac8403b0a2f4ff49920055d441ca3a7, type: 2}
   m_sharedMaterial: {fileID: -8840172308850977635, guid: 1ac8403b0a2f4ff49920055d441ca3a7, type: 2}
@@ -69515,7 +69527,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3-7
+  m_text: 4-7
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ac8403b0a2f4ff49920055d441ca3a7, type: 2}
   m_sharedMaterial: {fileID: -8840172308850977635, guid: 1ac8403b0a2f4ff49920055d441ca3a7, type: 2}
@@ -73126,7 +73138,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3-5
+  m_text: 4-5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ac8403b0a2f4ff49920055d441ca3a7, type: 2}
   m_sharedMaterial: {fileID: -8840172308850977635, guid: 1ac8403b0a2f4ff49920055d441ca3a7, type: 2}
@@ -74084,10 +74096,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3-8
+  m_text: 4-8
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ce1c39dc543a96344a5f67de96b2a367, type: 2}
-  m_sharedMaterial: {fileID: 2952003651432021203, guid: ce1c39dc543a96344a5f67de96b2a367, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1ac8403b0a2f4ff49920055d441ca3a7, type: 2}
+  m_sharedMaterial: {fileID: -8840172308850977635, guid: 1ac8403b0a2f4ff49920055d441ca3a7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -79926,7 +79938,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3-4
+  m_text: 4-4
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ac8403b0a2f4ff49920055d441ca3a7, type: 2}
   m_sharedMaterial: {fileID: -8840172308850977635, guid: 1ac8403b0a2f4ff49920055d441ca3a7, type: 2}
@@ -81183,7 +81195,7 @@ GameObject:
   - component: {fileID: 1652387473}
   - component: {fileID: 1652387472}
   m_Layer: 5
-  m_Name: Stage3-4
+  m_Name: Stage4-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85657,7 +85669,7 @@ GameObject:
   - component: {fileID: 1735362484}
   - component: {fileID: 1735362483}
   m_Layer: 5
-  m_Name: Stage3-1
+  m_Name: Stage4-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89882,7 +89894,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jade Harmony
+  m_text: Song Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: acabbe18e6cb1984f9f2cd1f7d3cf66a, type: 2}
   m_sharedMaterial: {fileID: 1138779979492190917, guid: acabbe18e6cb1984f9f2cd1f7d3cf66a, type: 2}
@@ -92359,7 +92371,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3-1
+  m_text: 4-1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ac8403b0a2f4ff49920055d441ca3a7, type: 2}
   m_sharedMaterial: {fileID: -8840172308850977635, guid: 1ac8403b0a2f4ff49920055d441ca3a7, type: 2}
@@ -94497,7 +94509,7 @@ GameObject:
   - component: {fileID: 1964209961}
   - component: {fileID: 1964209960}
   m_Layer: 5
-  m_Name: Stage3-2
+  m_Name: Stage4-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99945,7 +99957,7 @@ GameObject:
   - component: {fileID: 2130396519}
   - component: {fileID: 2130396518}
   m_Layer: 5
-  m_Name: Stage3-8
+  m_Name: Stage4-8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

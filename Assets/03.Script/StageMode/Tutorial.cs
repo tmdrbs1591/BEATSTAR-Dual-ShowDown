@@ -55,7 +55,7 @@ public class Tutorial : MonoBehaviour  // 코드 삭제 예정이라 주석 없음
 
     private void Awake()
     {
-        DataManager.instance.currentCharater = Character.White;
+        DataManager.instance.currentCharater = Character.Green;
     }
     void Start()
     {
