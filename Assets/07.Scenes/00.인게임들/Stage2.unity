@@ -6754,7 +6754,7 @@ MonoBehaviour:
   - {fileID: 455259809}
   - {fileID: 85039411}
   - {fileID: 776879928}
-  baseFontSize: 19.5
+  baseFontSize: 19
   fontSizePerCharacter: 20
 --- !u!1 &217934345
 GameObject:
