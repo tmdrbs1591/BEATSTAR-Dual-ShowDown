@@ -136,6 +136,40 @@ public class StageSoundChange : MonoBehaviour
         {
             audio.clip = songs[8];
         }
+
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FourthTheFirstStage)
+        {
+            audio.clip = songs[1];
+        }
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FourthTheSecondStage)
+        {
+            audio.clip = songs[2];
+        }
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FourthTheThirdStage)
+        {
+            audio.clip = songs[3];
+        }
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FourthThefourthStage)
+        {
+            audio.clip = songs[4];
+
+        }
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FourthThefifthStage)
+        {
+            audio.clip = songs[5];
+        }
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FourthTheSixthStage)
+        {
+            audio.clip = songs[6];
+        }
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FourthTheSeventhStage)
+        {
+            audio.clip = songs[7];
+        }
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FourthTheEighthStage)
+        {
+            audio.clip = songs[8];
+        }
         else
         {
             PlaySong(0);

@@ -46,6 +46,14 @@ public class ButtonSelectDebug : MonoBehaviour
                 case "Stage3-7": newStage = StageModeStageManager.Stage.ThirdTheSeventhStage; break;
                 case "Stage3-8": newStage = StageModeStageManager.Stage.ThirdTheEighthStage; break;
 
+                case "Stage4-1": newStage = StageModeStageManager.Stage.FourthTheFirstStage; break;
+                case "Stage4-2": newStage = StageModeStageManager.Stage.FourthTheSecondStage; break;
+                case "Stage4-3": newStage = StageModeStageManager.Stage.FourthTheThirdStage; break;
+                case "Stage4-4": newStage = StageModeStageManager.Stage.FourthThefourthStage; break;
+                case "Stage4-5": newStage = StageModeStageManager.Stage.FourthThefifthStage; break;
+                case "Stage4-6": newStage = StageModeStageManager.Stage.FourthTheSixthStage; break;
+                case "Stage4-7": newStage = StageModeStageManager.Stage.FourthTheSeventhStage; break;
+                case "Stage4-8": newStage = StageModeStageManager.Stage.FourthTheEighthStage; break;
 
                 case "Stage5-1": newStage = StageModeStageManager.Stage.FifthTheFirstStage; break;
                 case "Stage5-2": newStage = StageModeStageManager.Stage.FifthTheSecondStage; break;

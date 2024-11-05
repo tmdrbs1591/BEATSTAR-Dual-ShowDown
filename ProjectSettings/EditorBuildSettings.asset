@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/07.Scenes/Stage5.unity
     guid: 9298720aed7cf5449912cc5f793c233c
   - enabled: 1
+    path: "Assets/07.Scenes/00.\uC778\uAC8C\uC784\uB4E4/StagdeModeStage4.unity"
+    guid: 4d37be2561b73cb45b79834eb4554456
+  - enabled: 1
     path: "Assets/07.Scenes/00.\uC778\uAC8C\uC784\uB4E4/StagdeModeStage1.unity"
     guid: f7972dbb05d69cc42a7dc0b67933d05f
   - enabled: 1

@@ -84,14 +84,24 @@ public class StageModeSoundManager : MonoBehaviour
         else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.ThirdTheEighthStage) PlaySong(24);
 
 
-        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FifthTheFirstStage) PlaySong(25);
-        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FifthTheSecondStage) PlaySong(26);
-        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FifthTheThirdStage) PlaySong(27);
-        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FifthTheFourthStage) PlaySong(28);
-        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FifthTheFifthStage) PlaySong(29);
-        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FifthTheFSixthtage) PlaySong(30);
-        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FifthTheSeventhStage) PlaySong(31);
-        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FifthTheEighthStage) PlaySong(32);
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FourthTheFirstStage) PlaySong(25);
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FourthTheSecondStage) PlaySong(26);
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FourthTheThirdStage) PlaySong(27);
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FourthThefourthStage) PlaySong(28);
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FourthThefifthStage) PlaySong(29);
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FourthTheSixthStage) PlaySong(30);
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FourthTheSeventhStage) PlaySong(31);
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FourthTheEighthStage) PlaySong(32);
+
+
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FifthTheFirstStage) PlaySong(33);
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FifthTheSecondStage) PlaySong(34);
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FifthTheThirdStage) PlaySong(35);
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FifthTheFourthStage) PlaySong(36);
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FifthTheFifthStage) PlaySong(37);
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FifthTheFSixthtage) PlaySong(38);
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FifthTheSeventhStage) PlaySong(39);
+        else if (StageModeStageManager.instance.currentStage == StageModeStageManager.Stage.FifthTheEighthStage) PlaySong(40);
 
         else
         {

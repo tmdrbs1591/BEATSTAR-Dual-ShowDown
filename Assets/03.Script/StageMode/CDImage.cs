@@ -88,6 +88,31 @@ public class CDImage : MonoBehaviour
                 cDimage.sprite = cdSprites[7];
                 break;
 
+            case StageModeStageManager.Stage.FourthTheFirstStage:
+                cDimage.sprite = cdSprites[0];
+                break;
+            case StageModeStageManager.Stage.FourthTheSecondStage:
+                cDimage.sprite = cdSprites[1];
+                break;
+            case StageModeStageManager.Stage.FourthTheThirdStage:
+                cDimage.sprite = cdSprites[2];
+                break;
+            case StageModeStageManager.Stage.FourthThefourthStage:
+                cDimage.sprite = cdSprites[3];
+                break;
+            case StageModeStageManager.Stage.FourthThefifthStage:
+                cDimage.sprite = cdSprites[4];
+                break;
+            case StageModeStageManager.Stage.FourthTheSixthStage:
+                cDimage.sprite = cdSprites[5];
+                break;
+            case StageModeStageManager.Stage.FourthTheSeventhStage:
+                cDimage.sprite = cdSprites[6];
+                break;
+            case StageModeStageManager.Stage.FourthTheEighthStage:
+                cDimage.sprite = cdSprites[7];
+                break;
+
             case StageModeStageManager.Stage.FifthTheFirstStage:
                 cDimage.sprite = cdSprites[0];
                 break;

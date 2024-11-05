@@ -35,6 +35,15 @@ public class StageModeStageManager : MonoBehaviour
         ThirdTheSeventhStage,
         ThirdTheEighthStage,
 
+        FourthTheFirstStage,
+        FourthTheSecondStage,
+        FourthTheThirdStage,
+        FourthThefourthStage,
+        FourthThefifthStage,
+        FourthTheSixthStage,
+        FourthTheSeventhStage,
+        FourthTheEighthStage,
+
         FifthTheFirstStage,
         FifthTheSecondStage,
         FifthTheThirdStage,
@@ -184,6 +193,34 @@ public class StageModeStageManager : MonoBehaviour
             {
             }
             else if (currentStage == Stage.ThirdTheEighthStage)
+            {
+            }
+            else if (currentStage == Stage.FourthTheFirstStage)
+            {
+                AudioManager.instance.PlaySound(transform.position, 2, Random.Range(1.0f, 1.0f), 1);
+
+                Fadein.SetActive(true);
+                StartCoroutine(SceneLate("StagdeModeStage4"));
+            }
+            else if (currentStage == Stage.FourthTheSecondStage)
+            {
+            }
+            else if (currentStage == Stage.FourthTheThirdStage)
+            {
+            }
+            else if (currentStage == Stage.FourthThefourthStage)
+            {
+            }
+            else if (currentStage == Stage.FourthThefifthStage)
+            {
+            }
+            else if (currentStage == Stage.FourthTheSixthStage)
+            {
+            }
+            else if (currentStage == Stage.FourthTheSeventhStage)
+            {
+            }
+            else if (currentStage == Stage.FourthTheEighthStage)
             {
             }
             else if (currentStage == Stage.FifthTheFirstStage)
