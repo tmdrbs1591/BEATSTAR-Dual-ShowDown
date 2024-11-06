@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ClearPanel : MonoBehaviour
@@ -35,7 +36,10 @@ public class ClearPanel : MonoBehaviour
 
     void Update()
     {
-    
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            LoadingManager.LoadScene("StageMode"); // ¾À ·Îµå
+        }
     }
 
     void SetCharacterImage(Character currentCharacter)

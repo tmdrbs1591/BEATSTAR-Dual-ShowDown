@@ -57,9 +57,10 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     void Awake()
     {
         PhotonNetwork.LocalPlayer.NickName = UserInfo.Data.nickname;
+        Disconnect();
         Connect();
-        Screen.SetResolution(960, 540, false);
         PhotonNetwork.AutomaticallySyncScene = true;
+        PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion = "asia";
     }
 
     public void Start()

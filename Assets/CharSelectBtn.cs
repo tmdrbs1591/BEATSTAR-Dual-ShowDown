@@ -25,4 +25,23 @@ public class CharSelectBtn : MonoBehaviour
             anim.SetBool("isSelect", false);
         }
     }
+
+    public void CharChange(string name)
+    {
+        switch (name)
+        {
+            case "Lina":
+                DataManager.instance.currentCharater = Character.White;
+                break;
+            case "LinRan":
+                DataManager.instance.currentCharater = Character.Red;
+                break;
+            case "Seon":
+                DataManager.instance.currentCharater = Character.Blue;
+                break;
+            case "Spark":
+                DataManager.instance.currentCharater = Character.Green;
+                break;
+        }
+    }
 }

@@ -15,8 +15,8 @@ public class TitleSceneLoad : MonoBehaviour
         "리소스를 불러오는 중입니다...",
         "데이터 동기화 중...",
         "음악 설정중...",
-        "리나 밥먹이는 중...",
-        "세상에서 가장 지루한 중학교는? 로딩중..."
+        "박자 맞추는 중...",
+        "마지막 음표 확인 중..."
     };
 
     private int currentMessageIndex = 0;

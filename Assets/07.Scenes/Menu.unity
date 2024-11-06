@@ -8777,7 +8777,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &296796275
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8795,8 +8795,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20.61, y: -6}
-  m_SizeDelta: {x: 408.44, y: 868.31}
+  m_AnchoredPosition: {x: 75, y: -34}
+  m_SizeDelta: {x: 928.31, y: 1973.53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &296796276
 MonoBehaviour:
@@ -8818,9 +8818,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c6960ec9fd108624e944f4bd86825b41, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 259443f5a7adab243bd2fcec9677ff00, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -19292,8 +19292,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2111822572}
-        m_TargetAssemblyTypeName: DataManager, Assembly-CSharp
+      - m_Target: {fileID: 652621672}
+        m_TargetAssemblyTypeName: CharSelectBtn, Assembly-CSharp
         m_MethodName: CharChange
         m_Mode: 5
         m_Arguments:
@@ -28366,7 +28366,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &972342072
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28384,8 +28384,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10, y: -5.9999967}
-  m_SizeDelta: {x: 535.73, y: 860.25}
+  m_AnchoredPosition: {x: -4, y: -5.9999967}
+  m_SizeDelta: {x: 385.48, y: 618.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &972342073
 MonoBehaviour:
@@ -28407,7 +28407,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6273ea94745830b4a896a3c979abdebf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a7401deb07a308242a3c1a9acf323624, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -37586,8 +37586,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2111822572}
-        m_TargetAssemblyTypeName: DataManager, Assembly-CSharp
+      - m_Target: {fileID: 1264885971}
+        m_TargetAssemblyTypeName: CharSelectBtn, Assembly-CSharp
         m_MethodName: CharChange
         m_Mode: 5
         m_Arguments:
@@ -39836,8 +39836,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2111822572}
-        m_TargetAssemblyTypeName: DataManager, Assembly-CSharp
+      - m_Target: {fileID: 1308841768}
+        m_TargetAssemblyTypeName: CharSelectBtn, Assembly-CSharp
         m_MethodName: CharChange
         m_Mode: 5
         m_Arguments:
@@ -58377,8 +58377,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2111822572}
-        m_TargetAssemblyTypeName: DataManager, Assembly-CSharp
+      - m_Target: {fileID: 1555152767}
+        m_TargetAssemblyTypeName: CharSelectBtn, Assembly-CSharp
         m_MethodName: CharChange
         m_Mode: 5
         m_Arguments:

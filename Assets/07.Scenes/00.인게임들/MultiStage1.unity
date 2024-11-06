@@ -7041,8 +7041,8 @@ MonoBehaviour:
   WPanel: {fileID: 1427607492}
   EPanel: {fileID: 136425354}
   Death: 0
-  MaxHP: 10000
-  CurHP: 10000
+  MaxHP: 2000
+  CurHP: 2000
   appearPosition: {x: -6.55, y: -2.58}
   HpBar: {fileID: 1471533793}
   HpBar2: {fileID: 47885991}
@@ -41043,8 +41043,8 @@ MonoBehaviour:
   WPanel: {fileID: 1427607492}
   EPanel: {fileID: 136425354}
   Death: 0
-  MaxHP: 10000
-  CurHP: 10000
+  MaxHP: 2000
+  CurHP: 2000
   appearPosition: {x: -6.2, y: -2.9}
   HpBar: {fileID: 1471533793}
   HpBar2: {fileID: 47885991}
@@ -59864,8 +59864,8 @@ MonoBehaviour:
   WPanel: {fileID: 1427607492}
   EPanel: {fileID: 136425354}
   Death: 0
-  MaxHP: 10000
-  CurHP: 10000
+  MaxHP: 2000
+  CurHP: 2000
   appearPosition: {x: -6.2, y: -2.9}
   HpBar: {fileID: 1471533793}
   HpBar2: {fileID: 47885991}
@@ -61182,8 +61182,8 @@ MonoBehaviour:
   WPanel: {fileID: 1427607492}
   EPanel: {fileID: 136425354}
   Death: 0
-  MaxHP: 150
-  CurHP: 150
+  MaxHP: 2000
+  CurHP: 2000
   appearPosition: {x: -6.55, y: -2.58}
   HpBar: {fileID: 1471533793}
   HpBar2: {fileID: 47885991}
