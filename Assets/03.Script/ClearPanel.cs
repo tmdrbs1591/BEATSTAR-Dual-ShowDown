@@ -38,7 +38,7 @@ public class ClearPanel : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            LoadingManager.LoadScene("StageMode"); // ¾À ·Îµå
+            LoadingManager.LoadScene("Menu"); // ¾À ·Îµå
         }
     }
 

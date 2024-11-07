@@ -79692,7 +79692,6 @@ GameObject:
   - component: {fileID: 1824151718}
   - component: {fileID: 1824151717}
   - component: {fileID: 1824151722}
-  - component: {fileID: 1824151723}
   m_Layer: 0
   m_Name: Player4
   m_TagString: Untagged
@@ -79852,31 +79851,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1824151716}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17c60956793237b43802e47f8a43d255, type: 3}
+  m_Script: {fileID: 11500000, guid: bccf98289dd387e4fb4b94ef1da487e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   AutoBox: {fileID: 1160487671}
   SkillPanel: {fileID: 1728220182}
   SkillParticl: {fileID: 1891805447}
-  skillCooldownImage: {fileID: 967075980}
-  skillCooldownText: {fileID: 1377284110}
-  skillCoolTime: 20
-  skillpossible: 1
---- !u!114 &1824151723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1824151716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17c60956793237b43802e47f8a43d255, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AutoBox: {fileID: 1160487671}
-  SkillPanel: {fileID: 1728220182}
-  SkillParticl: {fileID: 777737192}
   skillCooldownImage: {fileID: 967075980}
   skillCooldownText: {fileID: 1377284110}
   skillCoolTime: 20

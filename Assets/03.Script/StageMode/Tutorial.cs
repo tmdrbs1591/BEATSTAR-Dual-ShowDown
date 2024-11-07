@@ -46,7 +46,7 @@ public class Tutorial : MonoBehaviour  // 코드 삭제 예정이라 주석 없음
     [SerializeField] GameObject go7 = null;
 
 
-    [SerializeField] LinaSkill linaSkill;
+    [SerializeField] SparkSkill sparkSkill;
 
 
     TimingManager theTimingManager;
@@ -64,14 +64,14 @@ public class Tutorial : MonoBehaviour  // 코드 삭제 예정이라 주석 없음
         thecomboManager = FindObjectOfType<ComboManager>();
         theEffectManager = FindObjectOfType<EffectManager>();
         theTimingManager = GetComponent<TimingManager>();
-        linaSkill.skillpossible = false;
+        sparkSkill.skillpossible = false;
     }
 
     void FixedUpdate()
     {
-        if (linaSkill != null) // Controller가 null이 아닌 경우, 즉 플레이어 컨트롤러가 존재할 때
+        if (sparkSkill != null) // Controller가 null이 아닌 경우, 즉 플레이어 컨트롤러가 존재할 때
         {
-            linaSkill = FindObjectOfType<LinaSkill>(); // Scene에서 플레이어 컨트롤러를 찾아서 할당
+            sparkSkill = FindObjectOfType<SparkSkill>(); // Scene에서 플레이어 컨트롤러를 찾아서 할당
 
         }
         if (thePlayerController != null)
@@ -363,9 +363,9 @@ public class Tutorial : MonoBehaviour  // 코드 삭제 예정이라 주석 없음
             if (currentTime >= beatInterval * 15f)
             {
                 AutoPanelAnim.SetBool("isAutoPanel", true);
-                linaSkill.skillpossible = true;
-                linaSkill.SkillOn();
-                linaSkill.skillpossible = false;
+                sparkSkill.skillpossible = true;
+                sparkSkill.SkillOn();
+                sparkSkill.skillpossible = false;
                 TextUpdate("Space를 눌러 스킬을 사용할 수 있어!");
                 currentTime -= beatInterval * 15f;
                 noteCount++;
@@ -605,7 +605,7 @@ public class Tutorial : MonoBehaviour  // 코드 삭제 예정이라 주석 없음
     IEnumerator SkilltrueCor()
     {
         yield return new WaitForSeconds(6f);
-        linaSkill.skillpossible = true;
+        sparkSkill.skillpossible = true;
 
 
     }
